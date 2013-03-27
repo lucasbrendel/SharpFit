@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="ProjectPath = ..\FitbitSDKModelLib\FitbitSDKModelLib.csproj" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2013-02-10T19:27:00" Importance="Medium" Text="FitbitSDKModel's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'FitbitSDKModel::FitbitSDK::APIAccess' -  (Class) " />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Medium" Text="'FitbitSDKModel::FitbitSDK::APIAccess' -  (Class) : success (file replaced) - C:\Projects\FitbitSDK\FitbitSDKModelLib\GeneratedCode\FitbitSDK\APIAccess.cs" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="ProjectPath = ..\FitbitSDKModelLib\FitbitSDKModelLib.csproj" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Medium" Text="FitbitSDKModel's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'FitbitSDKModel::FitbitSDK::RequestResult' -  (Enumeration), 'FitbitSDKModel::FitbitSDK::Units' -  (Enumeration) " />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Medium" Text="'FitbitSDKModel::FitbitSDK::RequestResult' -  (Enumeration) : success (file replaced) - C:\Projects\FitbitSDK\FitbitSDKModelLib\GeneratedCode\FitbitSDK\RequestResult.cs" />
+  <Message Timestamp="2013-02-10T19:27:01" Importance="Medium" Text="'FitbitSDKModel::FitbitSDK::Units' -  (Enumeration) : success (file replaced) - C:\Projects\FitbitSDK\FitbitSDKModelLib\GeneratedCode\FitbitSDK\Units.cs" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="ProjectPath = ..\FitbitSDKModelLib\FitbitSDKModelLib.csproj" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 11.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Medium" Text="FitbitSDKModel's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'FitbitSDKModel::FitbitSDK::APIAccess' -  (Class) " />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::APIAccess' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="The selection included 26 elements which were not bound to a template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::General' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::General::FoodUnit' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::General::Search' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::OAuth' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::ActivityStats' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::ActivityInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::BloodPressureInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::Device' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::SleepInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::User' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::GlucoseInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::HeartRateInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::FoodInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::FoodInfo::WaterInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::Social' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::Social::BadgeInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::Social::FriendInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::Social::InviteInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::BodyInfo' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::BodyInfo::Fat' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::BodyInfo::Measurements' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::Resources::BodyInfo::Weight' -  (Package): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::' -  (Association): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="Diagnostic" Text="'FitbitSDKModel::FitbitSDK::' -  (Association): no bound template." />
+  <Message Timestamp="2013-02-10T19:27:02" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

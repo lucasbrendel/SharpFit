@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6da86fb0-2191-4b9b-b77f-2acae1d54095"
+  name="FitbitSDK"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="1f54d571-a51b-4dde-8c8c-0cbcfb83dbf2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DFitbitSDK"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="9710c045-3531-407c-833c-7d7f4ef97a24"
+        name="RequestResult"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="8e9dd1e0-012c-43ee-ab48-0004787cbc26"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3D(Name%3DRequestResult ParentType%3DAPIAccess)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="58232583-cee6-40c4-85bb-e27ba2fa3252"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0b5cd74-1a84-4db5-a796-4210f244bd64">
+                <propertyInstance
+                  Id="05b24344-317b-4a1e-97ff-e25f9fbba9b6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="02bd0a58-1bff-4075-ba75-618dda1f2d1c">
+                <propertyInstance
+                  Id="2008259f-deaf-4fcb-a97d-09d3da85251b"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="97f29c8f-9d30-4456-8dda-24e83d77f76a">
+                <propertyInstance
+                  Id="12069a3b-b56b-43c4-9a5c-657ab1659998"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="df2a4025-eabd-43e2-aa2e-f337dab602f1"
+            name="Success">
+            <referencesInternal>
+              <reference
+                Id="2fcb1f25-3eb0-430a-875b-e3cb1c2f0d08"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3D(Name%3DRequestResult ParentType%3DAPIAccess) Member%3DSuccess"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="529c7289-dbc8-4af9-9afb-35ab7896f62b"
+            name="Failure">
+            <referencesInternal>
+              <reference
+                Id="3049a1d3-b11c-4af9-a06b-9d5833ef41ac"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3D(Name%3DRequestResult ParentType%3DAPIAccess) Member%3DFailure"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="747baea6-eb66-403a-9e1f-f7cc3ce9cef5"
+        name="Units"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="82305dbc-665c-4cb4-af8a-f062338408bf"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3D(Name%3DUnits ParentType%3DAPIAccess)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cc3504f2-e69c-4f71-842d-1fdb03ddd6e2"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="356c89d1-0512-4d3b-8921-485f2473db82">
+                <propertyInstance
+                  Id="6f95feb0-88de-48ae-90b7-17e1ad3d936d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22c9dc71-8f31-44e2-af42-a2ff2be5d4dc">
+                <propertyInstance
+                  Id="a02993df-4526-4614-81fa-e59002c6d7fc"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ceb4c2e-d596-48a2-a2cb-3c6f36b70b64">
+                <propertyInstance
+                  Id="9c678a9d-01ba-4b22-8201-fa5e11e9e7bd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="93572202-9b7f-4b47-bb82-f4c8cf8304aa"
+            name="Metric">
+            <referencesInternal>
+              <reference
+                Id="fcdbd97e-24bc-45c6-9c84-ae1afbb10a97"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3D(Name%3DUnits ParentType%3DAPIAccess) Member%3DMetric"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="fea2cb19-075d-4b6c-a580-948a9a27704e"
+            name="Imperial">
+            <referencesInternal>
+              <reference
+                Id="619e7255-c57a-4c0f-b512-063c41acef31"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3D(Name%3DUnits ParentType%3DAPIAccess) Member%3DImperial"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9c6b57d7-a4c6-41e1-8afd-af927326ff68"
+        name="APIAccess"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8fbde9a1-3fc8-4d1a-a6a8-f7a4262cca41"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3DAPIAccess"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9a204d82-e943-4b42-adbe-96b518be4eaf"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="324747a6-fd22-46db-9127-fb9e2e698e68">
+                <propertyInstance
+                  Id="235ffeed-9fc7-43b1-8572-cb24a14a7569"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8f77439-0ed8-44bc-8b20-c895b2dec1f7">
+                <propertyInstance
+                  Id="3e150bcc-9f00-426e-af83-cd67947c8200"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="400b683e-3769-4683-a3a5-073d9810fc30">
+                <propertyInstance
+                  Id="f22efe94-5d2a-4063-b2c4-39c31982d02c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b39e922c-0a27-4d66-87c3-8a1735702aeb">
+                <propertyInstance
+                  Id="8d41bdb7-5d16-4d8f-80a2-e00f67222f17"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2177f63-c35e-4077-b5ed-752af3827fa8">
+                <propertyInstance
+                  Id="277efcc0-5fcf-4055-b9ae-494dd995dfd2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="6804018d-2480-49cf-b611-fd8d15f2b319"
+            isDerived="false"
+            sourceEndRoleName="APIAccess"
+            targetEndRoleName="Units"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="747baea6-eb66-403a-9e1f-f7cc3ce9cef5"
+              LastKnownName="Units"
+              LastKnownLocation="Package_1856.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="badbfc17-1884-4978-a78c-3f7a84295b35"
+                  name="APIAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5b5c9cdd-6450-4127-959f-f5bd9532d546"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="225ed1f0-6397-4892-91f0-637b75c6ef7b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afb9d9fd-5b4d-46af-a36b-eee55257f84d"
+                  name="Units"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="723a2fec-231e-41ca-abcf-134a91d4d29c"
+            isDerived="false"
+            sourceEndRoleName="APIAccess"
+            targetEndRoleName="RequestResult"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="9710c045-3531-407c-833c-7d7f4ef97a24"
+              LastKnownName="RequestResult"
+              LastKnownLocation="Package_1856.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ede9742e-b96b-4b86-9c2c-710b9949fe31"
+                  name="APIAccess"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7a4be92-3e89-465f-a6d9-736394406b29"
+                  name="RequestResult"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="150ce314-6098-427f-93af-7c167f55a878"
+            name="APIAccess"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0736757c-93d7-4851-8f62-84131c626cfe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK Type%3DAPIAccess Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="44f89517-8423-473b-8596-06f3e524249f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="978f25bd-7f34-4486-9054-fe3c1a04f465">
+                    <propertyInstance
+                      Id="f7cc2d57-b719-4966-b897-ae4f7be15e48"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ce525c7-c242-4b7a-bb19-d41f0bfd6fae">
+                    <propertyInstance
+                      Id="7bda82cd-b1bf-40d4-9ede-a738f7aaac8e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93fbc938-13dd-4ca6-96a5-822c108d31cf">
+                    <propertyInstance
+                      Id="b70354eb-bc12-45af-b3aa-577c96235020"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="335f1c5a-d7a5-4311-baae-3f610d3899a2">
+                    <propertyInstance
+                      Id="184f8041-a463-4a07-a2e9-247020b753c4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="484eda6e-80f6-40da-9fd4-4a225bfa0023">
+                    <propertyInstance
+                      Id="ad63197c-cc7c-474c-b1fd-3cd1ee196286"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19bce771-db76-49dd-b50f-1c80761056c6">
+                    <propertyInstance
+                      Id="2a3ebc92-a11b-4b24-8556-3918b38e41a4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9006a58d-7fb1-4d47-be7a-8a433e5be0fe"
+        LastKnownName="General"
+        LastKnownLocation="Package_1859.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b6478440-6299-43ca-b03e-9707899fd608"
+        LastKnownName="Resources"
+        LastKnownLocation="Package4_1900.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8cfa27d6-d35d-4fd0-9779-a27b89f923e9"
+        LastKnownName="OAuth"
+        LastKnownLocation="Package1_1856.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0bdbecc8-a29b-4fb1-955e-7ecbf5221c20"
+        LastKnownName="Stats"
+        LastKnownLocation="Package1_1903.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="308339cc-a938-4f0b-b809-45057c5415e0"
+        LastKnownName="ActivityStats"
+        LastKnownLocation="Package2_1903.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

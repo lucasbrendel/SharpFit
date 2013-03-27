@@ -1,0 +1,114 @@
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.Extensions.CollectionExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.Extensions.OAuthExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.Extensions.StringExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.Extensions.TimeExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.WebPair: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.WebParameter: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.HttpPostParameter: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.HttpPostParameterType: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.OAuthParameterHandling: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.OAuthSignatureMethod: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.OAuthSignatureTreatment: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.OAuthTools: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.OAuthType: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.OAuthWorkflow: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.WebPairCollection: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Authenticators.OAuth.WebParameterCollection: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Deserializers.DeserializeAsAttribute: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.ParameterType: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.DataFormat: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Method: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.DateFormat: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.ResponseStatus: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Extensions.MiscExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Contrib.Helpers: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Contrib.HttpEncoder: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Contrib.HttpUtility: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Extensions.ReflectionExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Extensions.ResponseExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Extensions.StringExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Extensions.XmlExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.RestClientExtensions: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Serializers.SerializeAsAttribute: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Serializers.NameStyle: type is a value type.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.SimpleJson: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.IJsonSerializerStrategy: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.PocoJsonSerializerStrategy: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Reflection.ReflectionUtils: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Reflection.GetHandler: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Reflection.SetHandler: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Reflection.MemberMapLoader: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Reflection.CacheResolver: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for RestSharp.Reflection.SafeDictionary`2: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate stub for <>f__AnonymousType0`2: type is sealed.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IAuthenticator: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.Extensions.CollectionExtensions: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.Extensions.OAuthExtensions: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.Extensions.StringExtensions: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.Extensions.TimeExtensions: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.WebPair: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.WebParameter: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.HttpPostParameter: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.HttpPostParameterType: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.OAuthParameterHandling: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.OAuthSignatureMethod: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.OAuthSignatureTreatment: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.OAuthTools: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.OAuthType: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.OAuthWorkflow: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.WebPairCollection: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Authenticators.OAuth.WebParameterCollection: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.IDeserializer: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.JsonDeserializer+<>c__DisplayClass4: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlAttributeDeserializer+<>c__DisplayClass5: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlAttributeDeserializer+<>c__DisplayClassa: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlAttributeDeserializer+<>c__DisplayClassd: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlDeserializer+<>c__DisplayClass11: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlDeserializer+<>c__DisplayClass14: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlDeserializer+<>c__DisplayClass7: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Deserializers.XmlDeserializer+<>c__DisplayClass9: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.ParameterType: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.DataFormat: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Method: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.ResponseStatus: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Contrib.Helpers: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Contrib.HttpEncoder: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Contrib.HttpUtility+HttpQSCollection: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Extensions.ReflectionExtensions+<>c__DisplayClass1: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Extensions.StringExtensions+<GetNameVariants>d__0: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.FileParameter+<>c__DisplayClass2: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IHttp: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IHttpFactory: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Http+<>c__DisplayClass10: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Http+<>c__DisplayClass16: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Http+<>c__DisplayClass3: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Http+<>c__DisplayClassa: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Http+TimeOutState: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IHttpResponse: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IRestClient: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IRestRequest: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IRestResponse: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IRestResponse`1: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClient+<>c__DisplayClass10`1: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClient+<>c__DisplayClass2c: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClient+<>c__DisplayClass3: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClient+<>c__DisplayClass5: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClient+<>c__DisplayClassa`1: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClient+<>c__DisplayClassd`1: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClientExtensions+<>c__DisplayClass1: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestClientExtensions+<>c__DisplayClass4`1: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.RestRequest+<>c__DisplayClass4: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Serializers.ISerializer: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Serializers.DotNetXmlSerializer+EncodingStringWriter: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Serializers.NameStyle: type is an enum.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.JsonObject+<GetDynamicMemberNames>d__0: type is not supported because of internal limitations.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.SimpleJson: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.IJsonSerializerStrategy: type is an interface.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.PocoJsonSerializerStrategy: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Reflection.ReflectionUtils: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Reflection.GetHandler: type is a delegate.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Reflection.SetHandler: type is a delegate.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Reflection.MemberMapLoader: type is a delegate.
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Reflection.CacheResolver: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for RestSharp.Reflection.SafeDictionary`2: type is not visible to exported or assembly(RestSharp.104.1.0.0.Fakes).
+C:\Projects\FitbitSDK\FitbitSDKTest\Fakes\RestSharp.fakes : warning : Cannot generate shim for <>f__AnonymousType0`2: type is not supported because of internal limitations.

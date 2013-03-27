@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9006a58d-7fb1-4d47-be7a-8a433e5be0fe"
+  name="General"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="128fb81d-5d99-4867-8440-b1c36a7069e4"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DFitbitSDK.General"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="518bf76a-fe4e-46b2-bf7c-4abc870c55e6"
+        LastKnownName="FoodUnit"
+        LastKnownLocation="Package_1900.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3ab8f291-f60a-4518-8a40-8a4830a87b5a"
+        LastKnownName="Search"
+        LastKnownLocation="Package3_1900.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

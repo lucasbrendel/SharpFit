@@ -1,0 +1,2804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4ab88af3-7270-4bc4-8784-bcdbc649b7e1"
+  name="WaterInfo"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="05ca90f9-8ba4-4d0a-adbb-7f90a9fa85c7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="fc2d6e30-2470-450b-8596-8342940dfa82"
+        name="WaterLoggedHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="51428866-acbd-479a-aa2d-ffe59d678120"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterLoggedHandler ParentType%3DWater)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="66e4edbf-5c53-430c-9f27-05ac35bf2cb1"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="917c29b7-795b-4119-bdd4-6f6a505045fa">
+                <propertyInstance
+                  Id="fa74bab4-5f01-48af-90b7-06953ed1c835"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd34090b-1e19-4754-a2c0-a07b5b7771d2">
+                <propertyInstance
+                  Id="18caede4-7b3e-440f-8a08-1203c61be792"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d539f81b-0515-4833-b768-2a93a4fceac6">
+                <propertyInstance
+                  Id="c8c1ee10-b52b-4943-bdcd-d6e6aeff8855"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="df02f58a-efa8-4851-9099-fbd764bc579e"
+            name="Invoke"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c8f405c5-d8f8-4f9f-b42e-5ec810a17d1b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterLoggedHandler ParentType%3DWater) Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81e031b0-4a91-4293-9f89-8562c37886f0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a41cbc4-97cf-471e-b987-1524cc395d07">
+                    <propertyInstance
+                      Id="2ca4721f-2c4a-44b7-8ba4-41a7bb9d7ef2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29828e2c-36aa-4487-ad4f-a93e3c42f52d">
+                    <propertyInstance
+                      Id="27adffb5-fb16-4633-b63b-cbe3e82eb123"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="186b14d9-2286-4cf3-be1c-270971011f45">
+                    <propertyInstance
+                      Id="d2587b5e-90e4-477d-80c4-9af63c74102c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f35c4f33-fc2f-4cf5-95e6-fbfda660f672">
+                    <propertyInstance
+                      Id="b856a134-0d31-47eb-a65c-835a708c42fb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e41043f-93ee-47c2-9743-9ddec14178b5">
+                    <propertyInstance
+                      Id="3e92e098-6677-4576-8230-a1e411ccc9aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79afb07c-36da-4f38-b270-ba223de85475">
+                    <propertyInstance
+                      Id="09fe1273-ec8b-49b9-a1ac-303a4c49d5a8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c75f32ee-2e85-4953-92fe-5d9e20ddf192"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="314b1a1f-023a-4974-85b5-03ddb6276770"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterLoggedHandler ParentType%3DWater) Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="be453779-7638-4a6f-8fbe-c0212bdb8012"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1856.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aaf7730e-5795-4d64-b515-ec043c383d8c"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2261e048-9855-4f85-92bf-9f0999cd2d07"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterLoggedHandler ParentType%3DWater) Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e80894a1-de04-4c67-a389-80c5b658016c"
+                      LastKnownName="LogWaterEventArgs"
+                      LastKnownLocation="Package_1912.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e80894a1-de04-4c67-a389-80c5b658016c"
+        name="LogWaterEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f771ac61-aceb-4107-8560-9e45189da3a4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c9660535-3ae8-4328-ba5e-42b6aa3d15fe"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4ae24657-4b67-4b59-8269-8452e480ea19">
+                <propertyInstance
+                  Id="d8a45c89-33c9-4dec-ac4f-629196a314a4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="416e7c19-2366-437e-b210-7850fe74d877">
+                <propertyInstance
+                  Id="5853fd7e-edd4-4793-a111-f354fe522ae8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8362518-6fce-4df5-ab3a-16649efe662a">
+                <propertyInstance
+                  Id="c777c483-c4e6-43a8-b75f-9ebc39e2e349"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="135ab9d1-0a1e-48ed-984f-29d83a444e5a">
+                <propertyInstance
+                  Id="7cbdd010-e9f2-4088-8d37-96436ccbf9ee"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae1acd2f-7d04-499b-a437-a8f9c439ce1e">
+                <propertyInstance
+                  Id="54b93d2c-fbd1-4092-b257-dc2c0d6874c8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="170f5483-f496-42c8-bd8f-3615e0ecaacc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="db89541a-3e2d-47c8-960a-4ff4c1539801"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package2_1856.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4d6b403f-9ca6-443a-98e2-22d14f59377a"
+            name="water"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="04fdf8fc-8e9b-4ec6-817b-eb8d9e2dc48f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs Member%3Dwater"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="31e1e652-f878-4325-92e9-5392876098ad"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="341e37c9-8be0-4f3a-a1a5-6fd9475f22eb">
+                    <propertyInstance
+                      Id="8e11672a-0b6d-4b38-a7dd-0140a36f1d21"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ee5258d-8aaa-4568-b6a1-dae2afb3ca5f">
+                    <propertyInstance
+                      Id="c0ffc520-f7aa-444e-9909-f085043e3b9f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2e79084-dbbb-4f33-866e-8353ea8b0066">
+                    <propertyInstance
+                      Id="1d9def8f-d3d6-4c21-aac1-546847dcf66f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f124c7db-cd62-42d9-81d9-6fc3be043f8e">
+                    <propertyInstance
+                      Id="99291e1c-3faa-4915-9f83-241bb0dda4a3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c720dc7-5e5a-46bc-be47-2f1272dc4768">
+                    <propertyInstance
+                      Id="c4b29534-a315-4045-9712-9cf23a01484b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="e5921503-a06d-4b7a-8396-76079a0f7f13"
+                LastKnownName="WaterLog"
+                LastKnownLocation="Package_1912.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="87a0d493-8bbf-4bf0-94bf-4aca6cf9cabb"
+            name="LogWaterEventArgs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a0ba8c97-e331-47f7-8f7b-071050174ec5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e1d66002-0a89-4727-b29c-4410c2e4f236"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb76f125-ab9e-40a9-a497-023b0c5ae0cb">
+                    <propertyInstance
+                      Id="b2847554-13c9-41a4-bdfa-7f55bc5abae5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3734ecd0-2764-4285-bef7-7b56ab12db1f">
+                    <propertyInstance
+                      Id="d3084f41-9573-456f-964b-e50a19baa638"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7f7155e-9f84-4c38-b3fe-72e4f2b25629">
+                    <propertyInstance
+                      Id="e88f0293-f6c8-4ee3-a507-730f2619bed3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3689ffaf-3f43-4c86-b5ed-4f1385ead70b">
+                    <propertyInstance
+                      Id="467006ae-6533-4e4d-b277-08514f1ad2fb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8da4a38-1245-4040-9232-80fa4b3919b5">
+                    <propertyInstance
+                      Id="81d4d690-a5e1-4100-8c22-b577d4a32396"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c071b14-9c80-41da-8710-7ca093318714">
+                    <propertyInstance
+                      Id="19d94063-f44c-47d5-9fb6-23211c862a67"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1534d0f1-bbed-4fd0-91ae-272d52d94980"
+                  name="water"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c34b5e9e-9743-4aa2-89a3-35dea9de157f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLogWaterEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog)]) ParameterIdentifier%3Dwater"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e5921503-a06d-4b7a-8396-76079a0f7f13"
+                      LastKnownName="WaterLog"
+                      LastKnownLocation="Package_1912.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33147f43-1456-4fc4-912d-b5e268bb18da"
+        name="WaterSummaryGetHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c7d827e8-3cfc-4c72-ac76-34f3c86ca3ab"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterSummaryGetHandler ParentType%3DWater)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d1bc8f71-4903-4b05-951d-7eee8ae7a228"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13e99e42-73a9-4678-a39e-49a50ea31e19">
+                <propertyInstance
+                  Id="00b53553-abde-44ac-b950-18942f636c85"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df9b3e01-5f20-4444-91c6-16b117bc7a8a">
+                <propertyInstance
+                  Id="c49f00fb-f8c4-468d-9e10-df4540cda392"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d2ee867-6a5e-4677-ae1c-34f1eb3fe40b">
+                <propertyInstance
+                  Id="890b0f0a-d7bd-46ad-8787-fac2b3989b3c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d9e408d9-e044-480a-83a9-b868056f7808"
+            name="Invoke"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c818a2d4-07f9-43f0-96a6-4dc8b501dff1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterSummaryGetHandler ParentType%3DWater) Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6a3b7235-b903-470d-89f9-f0937e25b2e9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee7100ef-cd5a-4fad-8ba4-8cbb6dde484b">
+                    <propertyInstance
+                      Id="0110fc2d-29cf-451d-b066-a3f4b265deb3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="198b3d0a-9584-4250-8b32-09169211d13f">
+                    <propertyInstance
+                      Id="3d1b490c-338b-4214-8327-60a4dd1043ac"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e624e0d1-d09f-4429-9cc8-2b5f7a1da652">
+                    <propertyInstance
+                      Id="8a6aa6c8-fad7-4eba-86da-03ee8d80053e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b94276d3-0944-47b7-9d8a-d5d2fbdead83">
+                    <propertyInstance
+                      Id="a8bc709a-4c9c-454f-aea9-9112355f75ae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dacc31cf-b3f6-48d0-8820-4f764a25640e">
+                    <propertyInstance
+                      Id="f7ca2cff-7bec-4e4a-b799-dcc6cfcb5c20"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abc7cbed-45fe-401e-9d19-9d17a6f703e4">
+                    <propertyInstance
+                      Id="6a6fe78a-bed6-4701-8606-9a8212ca7a69"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58b463de-4e47-40ab-bd0f-f78821fba948"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0a20cf9a-6e09-4c7c-ab02-55199a334bc0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterSummaryGetHandler ParentType%3DWater) Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="be453779-7638-4a6f-8fbe-c0212bdb8012"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1856.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dff30d8e-e092-4148-862c-fb8d48ba44af"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="274e9179-e6c2-4a7a-94ba-f1b422af2fa2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3D(Name%3DWaterSummaryGetHandler ParentType%3DWater) Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="529b4869-ead8-42eb-9485-9416fd381407"
+                      LastKnownName="WaterSummaryEventArgs"
+                      LastKnownLocation="Package_1912.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="529b4869-ead8-42eb-9485-9416fd381407"
+        name="WaterSummaryEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1dd79192-66cc-4678-af7c-611293ce061c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="47303fd2-9d0e-4724-92ab-9745bea39031"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="173a1089-b190-4d9f-88c9-42145fb46fd6">
+                <propertyInstance
+                  Id="3092c3d0-d8a8-4276-b7f1-7c6ad0b2a53f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7aa19dc1-81fd-429c-af2e-5babf01e9680">
+                <propertyInstance
+                  Id="1fc347f2-b9d4-41b0-be60-9dc6ac8a909c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04e14135-787c-4fab-86b8-9030dde12234">
+                <propertyInstance
+                  Id="8600153d-d86a-44f5-b476-222867f8abfd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="977add90-e80a-44a1-8986-9a25114cae14">
+                <propertyInstance
+                  Id="2927405e-25cd-4db2-a90b-87b1023dec15"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e67d278-12b6-4f18-88b3-dd0941ce91cf">
+                <propertyInstance
+                  Id="5cf260c1-b615-4bb0-b404-9fa5a0fcfdbc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="122721af-38c4-471d-a3c1-801a65242883"
+            isSubstitutable="false">
+            <classMoniker
+              Id="db89541a-3e2d-47c8-960a-4ff4c1539801"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package2_1856.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ccbf1552-6d8d-4157-8d67-ef09d0f426a4"
+            name="WaterSummary"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1cd5fee0-5f66-4c2f-b2f7-e4c122cdb9f9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs Member%3DWaterSummary"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fbf80986-0e8f-4d69-b601-512900dfe94c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd34332e-2e45-4d38-a2a0-e2b9c0e8f70a">
+                    <propertyInstance
+                      Id="07a494f6-4766-40e6-b35b-f1bf181fe602"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca9a9405-b53d-4fcb-97c3-a47e17499fdf">
+                    <propertyInstance
+                      Id="1a24e0ec-2afb-4fa6-ac91-60d6e76285a1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f85701f-93fb-4c79-a189-e6bf1fade7f9">
+                    <propertyInstance
+                      Id="238fbb8b-6b4f-44e2-b914-e4d9e44b8e42"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c9dd642-1240-47b2-8691-b8933c178ef1">
+                    <propertyInstance
+                      Id="99aaca04-db17-41e9-992f-d9d102a02db3"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="799500a2-3afa-4ea5-94d9-607445f316ce">
+                    <propertyInstance
+                      Id="eb64a034-b62f-4336-a179-1490717633ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c41fba29-9e88-4aac-a25c-44550052a98f"
+                LastKnownName="FitBitWater"
+                LastKnownLocation="Package_1912.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2b914106-ee0f-42e4-8dd4-520b91653a68"
+            name="WaterSummaryEventArgs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4b81c137-1565-4c6a-b1f7-5487e4b715b6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d39c7855-a479-41a7-a535-47e843486508"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ae81b29-0647-4b3c-91ee-b4bae73c89d4">
+                    <propertyInstance
+                      Id="40e688c9-4305-4a68-adf0-3b43ad0a1037"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="739d3e9b-0ab8-4790-b3cb-4c953e2545db">
+                    <propertyInstance
+                      Id="84b6f13a-8e5a-4429-9d71-d27c9c52bf13"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb004949-70a4-4e33-9fa5-21d9ffa32e69">
+                    <propertyInstance
+                      Id="f596bb39-f075-4514-a1b8-93a2ef778247"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c011ef09-cdf0-40aa-9cf9-c433215d5536">
+                    <propertyInstance
+                      Id="dbf7e6b2-cdd7-4fb3-9c91-d3dd62e3ce14"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3bdac68-2484-4434-aeb7-a01c489e9037">
+                    <propertyInstance
+                      Id="a8cd2adf-d6aa-4a2a-85d1-e6938c12d086"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be339e0d-ec79-4b94-86cb-f32a71741577">
+                    <propertyInstance
+                      Id="ee54da96-e9d9-47e0-ba6d-7c820b08da6f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e527c7e7-b95d-4b1f-acc5-91502948d9a0"
+                  name="summary"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2645fd54-ca75-43ec-8677-cb1b0528547e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterSummaryEventArgs Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater)]) ParameterIdentifier%3Dsummary"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c41fba29-9e88-4aac-a25c-44550052a98f"
+                      LastKnownName="FitBitWater"
+                      LastKnownLocation="Package_1912.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c41fba29-9e88-4aac-a25c-44550052a98f"
+        name="FitBitWater"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7f545495-e6d6-421b-981f-b5491cdece91"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="14e9dcec-0aa2-4741-8073-26571de53a95"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0d9c209-1dd1-47cc-864b-5b2f9fec7df3">
+                <propertyInstance
+                  Id="7688a6c1-ea50-43f9-bd41-f64a41b45973"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c8e6498-fad0-45b6-9c54-e8e005774c15">
+                <propertyInstance
+                  Id="da91c030-9d97-4169-bd17-4850e756cb09"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8957ddb-e98e-48c0-8fd3-02615eb69fa3">
+                <propertyInstance
+                  Id="560b86cd-d992-4b58-8839-9b63afb06d1b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5b2604b9-15be-48f9-9e20-63d027b365d0">
+                <propertyInstance
+                  Id="8ec2c1fb-d10c-43fe-8991-afc28c219193"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10dbd9e2-a7a2-40f1-ad97-877fc714a350">
+                <propertyInstance
+                  Id="b11117ed-4e62-4a14-ba5d-4c8d521fa49a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="8f9b261d-cd22-4821-bd5b-c734c82ca4f0"
+            isDerived="false"
+            sourceEndRoleName="FitBitWater"
+            targetEndRoleName="Summary"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8387c9cd-79e9-4c9b-9358-ec26cf7a6189"
+              LastKnownName="Summary"
+              LastKnownLocation="Package_1912.uml" />
+            <description>Property Summary references type Summary.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cdd3dbd-4480-413d-9844-4b1e036396d0"
+                  name="FitBitWater"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cc63bca2-f27e-4809-b306-f391e3846b43"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f51b9684-7f9e-425e-88e7-4bf27a156fe3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efaa8723-33bf-4d84-a41c-a67767b1d1ed"
+                  name="Summary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="20da71a6-35a2-4689-b899-14f92c07c0ea"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="556f831a-5e41-4ea0-b494-7f553737e1fa"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b63d68c8-0767-41d8-95c6-980f97e2e9cd"
+            isDerived="false"
+            sourceEndRoleName="FitBitWater"
+            targetEndRoleName="Water"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="e662c107-b065-4eee-b13a-355fc9512b7f"
+              LastKnownName="IList&lt;Water‎&gt;"
+              LastKnownLocation="Package2_1900.uml" />
+            <description>Property Water references type IList&lt;Water‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="caa40d36-ee9d-41ba-9888-b32317575cb1"
+                  name="FitBitWater"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d01f83cf-a7f2-47e2-b682-daf61d605bbc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="468bd9d0-c6bc-4175-9e25-02c4fa8de979"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a512d66-6b9c-4166-8b28-92705c727d8f"
+                  name="Water"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b0973538-0b92-4878-b368-4c0c288c8f0f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="008cc6c5-c45a-486e-95f7-462472dd29eb"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="137b36c1-b618-4e1a-ac35-af57502c0172"
+            name="Summary"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="65ba6bf5-43e2-4870-ab23-f82fa176abdf"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater Member%3DSummary"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="71de9735-7ffb-41d3-a862-1db10bc81517"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e5803ff-06f8-4e7f-b639-3ad43af02cfd">
+                    <propertyInstance
+                      Id="4e986d88-a96c-4332-999d-46fd5b8d5db1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d3625de-9060-46b7-b11f-5c8dd1a8ddc5">
+                    <propertyInstance
+                      Id="0a48f1b2-7f34-4d0d-ae81-4a12d19e41b0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f3fe95c-744e-4971-a097-e855c961b3e3">
+                    <propertyInstance
+                      Id="31df5e6f-0f61-42fd-956c-2d351296dc70"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25db8f60-4fdc-42a0-b41d-67b40c82246d">
+                    <propertyInstance
+                      Id="2b491309-ed60-4070-9a4d-902225551948"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63aa15fe-73b2-406b-86b0-88b578a09020">
+                    <propertyInstance
+                      Id="acfc88fa-cb43-42ae-bf67-d2310e431324"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3e18332-612f-487f-ba4d-0d14d1cb6b56">
+                    <propertyInstance
+                      Id="eea8fae6-96ec-465a-bced-ecef89fb55b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77ab1efc-fcbd-44cf-87a4-4fb700f09023">
+                    <propertyInstance
+                      Id="9b94c320-6a2b-4496-a7e1-02751d719b80"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8387c9cd-79e9-4c9b-9358-ec26cf7a6189"
+                LastKnownName="Summary"
+                LastKnownLocation="Package_1912.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bab685be-82b9-4daa-bd62-ed71dbeec2ca"
+            name="Water"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="28f60f94-1d93-4d51-8451-60c42fcb5dea"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater Member%3DWater"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bb0a3298-1683-4e9f-924f-ac4096b1c84a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="319c0d44-17bc-4f02-a2dd-a0183b481db1">
+                    <propertyInstance
+                      Id="bae536bb-79f7-476e-98e2-473f3355f86e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2725f25-94dc-47b6-8a78-4d6cd0edee05">
+                    <propertyInstance
+                      Id="f8d6f5ea-785a-4e94-95cb-1c5fb1001f3f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d2fe399-f3d4-4c4a-b854-f5750d00633e">
+                    <propertyInstance
+                      Id="33615d55-cc92-4c08-b899-6f2d8e68efb9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5230ac8-3785-491b-8ac0-954d333942a9">
+                    <propertyInstance
+                      Id="0106d8cf-4c0e-4e4f-830b-39b3ee8b4c80"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1a21847-888d-4a1e-8ad9-995c7f8f605d">
+                    <propertyInstance
+                      Id="ab271847-4142-4519-80a1-c3eade33f489"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffa813c6-2a32-4b2e-afc5-d26a880d5c39">
+                    <propertyInstance
+                      Id="aefd3468-0554-4389-afe6-11739f316689"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32b19ccb-faa4-46f5-b6c4-19aa0ff8b464">
+                    <propertyInstance
+                      Id="cf9f8f95-5a1a-429d-934d-dda461dca14b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e662c107-b065-4eee-b13a-355fc9512b7f"
+                LastKnownName="IList&lt;Water‎&gt;"
+                LastKnownLocation="Package2_1900.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="16f10608-ca27-48d2-9b7e-933f8d40b954"
+            name="FitBitWater"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fdf356a2-ce00-40d4-8418-655f572bd99d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f2bd1275-beb7-47d7-bcdb-fdd5ca7545db"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82d2c9f7-3846-48dd-ab4f-6a0f93f0f6a5">
+                    <propertyInstance
+                      Id="b3617a54-68ff-4745-b37b-5918ff673bd2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3a289f7-32fd-4d56-8624-42b1f22e2395">
+                    <propertyInstance
+                      Id="93fdd99a-04a7-45d3-a558-81e10288ad29"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efb282ce-e7fa-4404-a110-d2692ba867fb">
+                    <propertyInstance
+                      Id="f0a726c5-3f3d-4e70-866c-1a9773c4db7c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7286eaff-309b-4d1a-93d7-95e954c9a430">
+                    <propertyInstance
+                      Id="44b9541e-883d-46f5-ac05-e832b76a678e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5eb628d-d395-45dd-ad10-81889ee878ca">
+                    <propertyInstance
+                      Id="803c847e-8fa4-4ed2-8d08-260938c3c953"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ad9b945-b6ce-43f2-81f7-8e204303396a">
+                    <propertyInstance
+                      Id="3b053184-adfd-422c-bc42-3350649e2d9b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8387c9cd-79e9-4c9b-9358-ec26cf7a6189"
+        name="Summary"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cf7f5901-066d-4ead-bdec-17538a1651be"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DSummary"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7c5d9c13-51bf-4449-a15a-568356f21037"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2833091c-63d2-468d-9026-1a3e4ae5fa56">
+                <propertyInstance
+                  Id="54ad5d44-18bb-44c4-a7bc-b2bedc412745"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7b357cc-c3b9-46cd-a146-1b557d725dd5">
+                <propertyInstance
+                  Id="f12f0c52-0f0b-4396-82fe-89a34fe8afc4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9773c39f-135d-46a6-b6af-7aba2cf9ab8b">
+                <propertyInstance
+                  Id="1c338069-76f7-41a7-bcc4-72f98e33ba62"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05a01d33-7c80-4c44-aaa4-428a3dee25dd">
+                <propertyInstance
+                  Id="84406965-f261-4894-9428-fee0c84a8a37"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49ccefb0-bce1-4027-878d-3b804e1a1d6e">
+                <propertyInstance
+                  Id="33f8db3b-9c06-412d-b293-3e110106f1f9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1ccf53a0-3b16-4af3-af02-c9f94929e605"
+            name="Water"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a1787dd3-4618-4f9d-90ae-d879856e8cf7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DSummary Member%3DWater"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0da0ecf4-c0ea-4f42-9731-12ac3740597a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b75358f4-a232-4ca6-a480-8a2a06c8e3d2">
+                    <propertyInstance
+                      Id="2e926f7f-2054-48ca-a3e5-e1d7ef37649a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97fe0509-95a7-4d7a-8d82-defc9502fce7">
+                    <propertyInstance
+                      Id="02ec2300-b76a-4105-91c6-ca4001c0c1bb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7073a48c-2093-4cf9-a3cd-ce50167ce48f">
+                    <propertyInstance
+                      Id="959082ae-ee70-492e-97ea-1acbe9afb48b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="311ae6a3-cb38-4cf5-86bc-e920256a96df">
+                    <propertyInstance
+                      Id="47809e9e-f427-4f99-b17b-53ae48909ee3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d50af40-a8da-44b9-95ec-77bad7617e23">
+                    <propertyInstance
+                      Id="7d481687-52e4-4ffe-b8b6-4ef73613da36"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e992377-7cf9-4c04-8bf3-3bea5c0bdd87">
+                    <propertyInstance
+                      Id="7920e7a0-ebe3-4324-a17a-234adec40f18"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43777f82-3348-4a34-98bf-2d959313fd7a">
+                    <propertyInstance
+                      Id="f4e5aafc-0cff-4a22-a4a7-12bb613ccff3"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1d62508a-747b-46b9-b645-fd602609502d"
+            name="Summary"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b7d637e0-4b7b-41f9-a4d5-f6b02a14fcb6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DSummary Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ffdf46ab-80c0-4a05-bd9e-50c956e3c11f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9513b4b4-b6e3-48d4-a8ce-bece0f0bf578">
+                    <propertyInstance
+                      Id="de5f664d-7240-48da-91e5-e8ceb855b707"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ae46649-08e3-406c-a759-c0d6ff12df80">
+                    <propertyInstance
+                      Id="e88a561b-1665-40d1-be40-bb25c1105022"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb488bfb-2e17-49bc-8fe4-2b9d98e7698d">
+                    <propertyInstance
+                      Id="d4176a09-986b-4a81-916d-866374c56cf2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91bab239-0b15-4700-98b1-a810013b6e06">
+                    <propertyInstance
+                      Id="8c09bf53-f1e5-4039-b658-0c69de76e3d4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cb36a8c-f99d-456f-aadc-eb5c5e2ccbe3">
+                    <propertyInstance
+                      Id="d8c299a4-ae2b-4ae1-9c47-398c1a82a0ce"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44799c37-e4b7-4667-bac4-fe686ce40781">
+                    <propertyInstance
+                      Id="3ea68e88-f95c-44c7-8e2e-6336da8069ac"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f8cd8269-f611-47a3-a574-006ece789c5a"
+        name="Water"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="aa2536f4-a7ce-43d2-b021-30c41d0c9022"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="284ba2b3-0a61-4016-8178-e9246623e04b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b0280df-a64c-40f7-87ec-71483b958a19">
+                <propertyInstance
+                  Id="dbc8d498-55c5-4ce0-8db1-7e16286f31e4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="508a7b35-87cf-41dd-a2cb-d8b26368fb42">
+                <propertyInstance
+                  Id="04e9120c-4bee-4a63-a518-894f93f79a75"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73802fdc-555c-4f57-8f50-8b960a86bbde">
+                <propertyInstance
+                  Id="2bc865da-875c-4b2a-b45a-2a5c84b99e19"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f629cae-41f3-44d9-b02a-5bee6275b94b">
+                <propertyInstance
+                  Id="89467867-2d6b-46da-83a9-23ad4218afca"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5ddafad-74e4-4ee7-8075-55adc132828d">
+                <propertyInstance
+                  Id="14d79dad-5193-4f61-955a-635e9e50db3a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="aa1342e9-7116-4578-a611-8924ffc8bc60"
+            name="Amount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5325449d-2314-4389-8335-6917a7ab917e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3DAmount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="69b53e36-124a-4663-979f-b2fabb5ee59f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="594e9df9-d14e-412a-939f-c4cb6ce7be5e">
+                    <propertyInstance
+                      Id="b99f0c5e-21a5-4f58-9da3-73e591130456"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43e845db-fffb-4057-b64c-a5b2e75c6404">
+                    <propertyInstance
+                      Id="42bd74f4-1296-44ff-b3ba-5030f2e67ea9"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a45265f5-452f-456c-b2d4-d1cc0bdd47d4">
+                    <propertyInstance
+                      Id="7b653e37-5508-46c6-b791-d62cd19a9dd2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="338fee79-bfcc-4390-9bd0-bddc12da8f57">
+                    <propertyInstance
+                      Id="532c552b-3ecb-4c97-ade0-c2f1b5f71b65"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="977267ac-1998-44b5-b719-f1a636c95d26">
+                    <propertyInstance
+                      Id="03bcae10-1d34-4f89-916f-1309e886f36c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e554eb9-be63-4ada-aaf7-77f985310b33">
+                    <propertyInstance
+                      Id="a2160811-4851-4466-a35e-9790eaed13c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ac08a9f-5f73-4d4c-8168-556c2ca9401c">
+                    <propertyInstance
+                      Id="d541cb61-59c2-4d28-b4c8-8dd32f7568b6"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d5601266-bea5-4dfd-a5f1-3b8415b5ad3f"
+            name="LogId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b74f60c3-2ddf-4b80-83d6-d7150e7fec18"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3DLogId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="570eed04-c4ae-4923-9720-69dd116fddcc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09594530-ccd5-4238-bfac-329a01a21447">
+                    <propertyInstance
+                      Id="a5cbd32a-2d23-4234-a1a2-c99594ace96b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaeb9757-fb74-4394-a353-46a6020980f9">
+                    <propertyInstance
+                      Id="564d31e2-e154-4a40-89c1-795ea084e4ac"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="364bb8ac-2c78-423c-9a27-10bcde85c94b">
+                    <propertyInstance
+                      Id="97f4f700-0158-469a-825e-7e6ac82a532c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab1b8caa-5b8e-4f90-8983-b2fcbd90a5ba">
+                    <propertyInstance
+                      Id="1738b59b-0991-451e-8fb1-64930da3bda6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49678f26-ac87-4448-b219-c67fe51ea9aa">
+                    <propertyInstance
+                      Id="0cdebbce-3a69-4aef-aa7b-b10b6c26a121"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4537bc50-717c-4640-b452-4ea3743d3965">
+                    <propertyInstance
+                      Id="0d8ce426-b064-451a-8837-3204e10c06c6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18897e7a-9099-4fda-87a3-0bbf13cbf938">
+                    <propertyInstance
+                      Id="f73529e9-3812-49f0-9304-be3548f5bd04"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5bd58ef6-8a8f-46b0-aacf-9e8febd5dd6b"
+            name="WaterLogged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ed4d130a-851b-4774-8934-b3ae34a8d0d9"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3DWaterLogged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="06655d50-fd7e-40ef-8dd4-014390b3a9e5"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8b8f0cf-b8d2-428c-ab31-938c13043e6e">
+                    <propertyInstance
+                      Id="922a8b78-b399-42df-b34b-64777434b0dc"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ff3c507-583e-4671-8202-ae8701576308">
+                    <propertyInstance
+                      Id="b6327af8-ec18-4404-aed0-ae97231c1c30"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bef7902c-e234-4a63-a732-e1c0f441e651">
+                    <propertyInstance
+                      Id="cc456919-936a-4729-abe1-a5f70724bf46"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ceb01da-1470-449d-913d-024050be070c">
+                    <propertyInstance
+                      Id="8a969a28-fa84-4410-a718-b9fe64d5bfd4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48110a8a-08e5-435c-8399-86d2b5e9ce51">
+                    <propertyInstance
+                      Id="582b7d88-0b3b-4c23-ba67-5cb5bb70a172"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="fc2d6e30-2470-450b-8596-8342940dfa82"
+                LastKnownName="WaterLoggedHandler"
+                LastKnownLocation="Package_1912.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aa374109-bb3e-4d16-a72c-0c1a7c9d53a7"
+            name="WaterSummaryDownloaded"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="929d2a5e-8513-4ce5-9d2d-b6d79f6236a6"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3DWaterSummaryDownloaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="778d3eb5-e5b8-40f5-b4f1-6b6c0ce088ae"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5e28fd8-0847-4bad-807e-0ec7ea1d5115">
+                    <propertyInstance
+                      Id="c0226a21-1098-4936-bd10-2768ba1012ac"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70e9d6fb-c601-40cc-9c49-de5305e01027">
+                    <propertyInstance
+                      Id="527c130c-9930-4d81-aa78-516acf8a38f5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18f2a54d-0de7-408e-9755-b7a863ff9f20">
+                    <propertyInstance
+                      Id="d54cc3a4-d4cd-45e8-85fb-69f17f4abc17"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8ef65eb-0c01-43bd-9478-d5e55049f943">
+                    <propertyInstance
+                      Id="86febcb1-aad6-484b-b771-925d5ad1a84b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcdcf786-8b94-48c6-9fdc-8cf9615cc601">
+                    <propertyInstance
+                      Id="d93dff03-1ab1-4cd7-9c84-8305305d7a32"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="33147f43-1456-4fc4-912d-b5e268bb18da"
+                LastKnownName="WaterSummaryGetHandler"
+                LastKnownLocation="Package_1912.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bbcd279d-c1a7-4a5c-842b-1d452354550a"
+            name="Water"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a3d4174c-04d4-487f-8d90-800a9b5a4b0c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f8d9c1d0-fe8b-4d72-b2e7-db69251450ee"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e69f1cc-8a26-4029-9746-6ff17887951b">
+                    <propertyInstance
+                      Id="1ffdecfd-70d7-423e-baa0-bc598105e20b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0658c9d7-aa50-47c2-92b3-debd3d4b6e77">
+                    <propertyInstance
+                      Id="2afed498-2e77-4eac-b766-8ab5192ef85c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01ca88ec-585a-4b9a-a200-b4dc3239286c">
+                    <propertyInstance
+                      Id="d54871a0-fa51-4733-b18d-c044d507c56c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e40f3c39-5d01-4f38-b9a8-c42033cf50f2">
+                    <propertyInstance
+                      Id="1243b3ee-0138-4855-abe8-ed4f860916da"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a845753-b8ee-4c8d-b462-84f263a09a5a">
+                    <propertyInstance
+                      Id="3b3cac2d-548c-4955-a969-2e0ae59e5a89"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4efacc9a-d6a0-43a3-b9cb-3479efea0233">
+                    <propertyInstance
+                      Id="db8f3caf-71e8-46f6-bb80-4dee26da7ee8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1fcee22e-a4fa-4b27-ae3d-82de57a84f37"
+            name="GetWater"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="39da25d0-3774-4a22-a8a0-d257c2208c20"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DGetWater OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDateTime)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e3e1a115-2736-4a98-a558-ef28782fd339"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06e846f7-830d-43db-83b4-b15dd82c04ed">
+                    <propertyInstance
+                      Id="a95a471c-def4-45f9-b9af-166adab43300"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40b30a6c-a21e-4374-9ed6-93b32328b2d6">
+                    <propertyInstance
+                      Id="5414da70-ac47-46cb-9b5f-8925d4b887e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7662d6c-be73-46e3-8ed4-f197a8904099">
+                    <propertyInstance
+                      Id="1bb1f7df-aa28-49e9-a24d-b1a4f3a1319e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e296690e-91e9-4d1b-b73b-0721b5f716d5">
+                    <propertyInstance
+                      Id="d2362825-a4a0-4986-8e9c-16c5bc6379b3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b5898ac-e435-448b-bdec-5edd1b8eb41a">
+                    <propertyInstance
+                      Id="224f9590-ad7f-41f4-8a6f-dfe48164a08e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70c974fe-daf1-4f25-91ab-0ea86e48ba66">
+                    <propertyInstance
+                      Id="c65069d0-31d2-4c8b-b15a-ef3f91055e95"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d2128bb8-eb18-4877-9844-d4d2de7925b6"
+                  name="date"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6356d6c1-0285-4c3d-96f1-7e43d7deb0e2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DGetWater OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDateTime)]) ParameterIdentifier%3Ddate"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1b774e90-0f34-47f2-9de6-ca8ee608a757"
+                      LastKnownName="DateTime"
+                      LastKnownLocation="Package2_1856.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="14785ce0-2bb4-48fe-9753-f053ce28eef8"
+            name="LogWater"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="009eaff2-15f6-4f16-9a33-16b1b3cfbfdd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DLogWater OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d469bdfb-0f3c-4738-bcc7-4f9814c7d6c2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2179044-6c90-4cec-988f-6293b6d341b0">
+                    <propertyInstance
+                      Id="7d86d43e-7c3e-4398-a583-d283e544c08f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74ce0092-ce54-4e32-9d4f-e1e71d9a3eeb">
+                    <propertyInstance
+                      Id="462911a5-a348-4f59-af15-9b3c2c9af294"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73bfadff-7df4-48f4-899e-7acd658491a7">
+                    <propertyInstance
+                      Id="324dfb40-ebef-4f17-8e08-1bea27500cb3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f7c049f-cc16-48aa-b9ed-7f6e1edc0e94">
+                    <propertyInstance
+                      Id="10b41e3d-53aa-41ab-8c2f-133ee0e009ef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3907af56-dd42-4981-84e1-ea73f46a33cf">
+                    <propertyInstance
+                      Id="97442da7-d937-48d4-aa87-3841b63244f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f64a1c0e-89b1-4109-b350-896b1f5a18b4">
+                    <propertyInstance
+                      Id="d602ed0d-8342-4a6b-ac7f-c9f2234c5195"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f702de5d-6f81-47ae-b94d-02931eddbca4"
+                  name="param"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1ae5dbb0-7f81-4de7-aafa-98c157a9c3fb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DLogWater OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DDictionary GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]))]) ParameterIdentifier%3Dparam"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4b7d8155-527a-4d44-a386-47c17dc20b5c"
+                      LastKnownName="Dictionary&lt;String‎, String‎&gt;"
+                      LastKnownLocation="Package2_1900.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4af59424-ffbb-47de-a8ab-c1b4241e43db"
+            name="DeleteWater"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cb38c15d-db22-4c0d-86f0-07928fe06aab"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DDeleteWater OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aa26730a-6e8f-417e-8e60-58e7158c6c8c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9965dcb-eb1a-4681-9f8d-0f2322cf4a6c">
+                    <propertyInstance
+                      Id="d168787d-5cf1-4efe-a252-69206eb0cbf1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d2b59ac-9f2d-4a8d-857b-b7c9ca51ce79">
+                    <propertyInstance
+                      Id="c71bad07-d7a0-45e4-9c42-e4203146122d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3ae3133-c850-4c76-ab03-7dacfe752252">
+                    <propertyInstance
+                      Id="bc806d37-4df9-4c38-8c89-c915402299ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c063fed-3fe2-498a-8959-3ba4d5e42e9c">
+                    <propertyInstance
+                      Id="70339879-ba66-4fa7-87d1-de3a00314779"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c1596da-0cf6-4de2-84f9-a9853d7461a0">
+                    <propertyInstance
+                      Id="43e93cb9-76d8-4afa-a249-50c408cac9d9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="461562ca-edab-4bcd-a422-fc7c5df959f2">
+                    <propertyInstance
+                      Id="551d1bff-4213-4dfe-83a3-f2f26d7eaa17"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e7a5200d-9833-454d-bf81-7e4b2815c2f5"
+                  name="ID"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f8c78980-0ac3-4e9a-b774-ace74c950b7c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DDeleteWater OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FSilverlight%2Fv4.0%2FProfile%2FWindowsPhone71%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DID"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="FitbitSDKModel.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6c404c13-15df-4dd6-a000-f34ea677c32a"
+            name="NotifyDownloaded"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d39d2599-51e5-416e-a0e3-25c91f824624"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DNotifyDownloaded OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c80611de-e118-47b5-b9dd-e9bd538bd0ec"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cc01b4e-68ff-4d7e-aafb-7a358174a509">
+                    <propertyInstance
+                      Id="03e36a5b-aa3b-4885-8970-7c3496ce4f68"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="357ae822-0257-4e80-aa8f-cb06652eb8e6">
+                    <propertyInstance
+                      Id="e6ba4b3e-e3fe-4010-9307-44a400520713"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e5fe3b9-0397-4882-9768-8a9b46244928">
+                    <propertyInstance
+                      Id="ffdfd1e3-d921-4ef4-813f-8f79ce3def79"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a074a431-32b3-49ac-9fdb-cfcb681869c4">
+                    <propertyInstance
+                      Id="b812f1cb-109f-49f0-87dc-aa1289cbe247"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cd829b5-6a84-4194-a6b5-ac26eb4364fc">
+                    <propertyInstance
+                      Id="b9100342-44f5-4865-ae9b-64b5b8653107"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="feb37b4b-7784-4c32-afd2-115ddcef0fb0">
+                    <propertyInstance
+                      Id="ed5026c2-4f46-4047-bce8-95bccedcd5b3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af336c2b-8f07-433e-a0ff-505a4b135c19"
+                  name="summary"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8f80904a-d543-44c1-ab3d-3263114eb842"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DNotifyDownloaded OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DFitBitWater)]) ParameterIdentifier%3Dsummary"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c41fba29-9e88-4aac-a25c-44550052a98f"
+                      LastKnownName="FitBitWater"
+                      LastKnownLocation="Package_1912.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="984dbf89-5a82-47b0-bd1b-7d88722866fa"
+            name="NotifyComplete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="91c3824c-8f44-427a-9a4c-8f08908045e3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DNotifyComplete OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="79c6ab8a-c194-4931-860d-3e7076759e3f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c382b92b-1ff0-4ea5-8aac-b11adabc456f">
+                    <propertyInstance
+                      Id="c808f8fb-691e-4c1a-810d-82d8bee8992a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ef21571-0982-435f-91d8-1a73c1db5d21">
+                    <propertyInstance
+                      Id="52eb0456-f760-458b-a0f1-15d218ca6b55"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cdd504f-f9ca-4e57-a15f-2e14db546d3c">
+                    <propertyInstance
+                      Id="86835ad0-6f37-4678-910d-d2021f7f6917"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8aa01c8-89e3-4771-a8f1-93c22c10ab91">
+                    <propertyInstance
+                      Id="62fddb21-219c-44c2-ba2a-8ec31ffe0a93"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="500feb07-47f9-4d9b-b6cb-e4abcce1d8ac">
+                    <propertyInstance
+                      Id="6002c8c7-9c23-4406-a3cd-c303b563019d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d27fb6a-3375-4617-a029-2e4e5b36b5b6">
+                    <propertyInstance
+                      Id="54696cb3-c639-44d0-8b98-a886b1ebae37"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6423b1a1-185c-4ba6-945c-64a26512eaea"
+                  name="water"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e6f3f8c8-ff3c-42f1-84fa-e2348005b306"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWater Member%3D(Name%3DNotifyComplete OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog)]) ParameterIdentifier%3Dwater"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e5921503-a06d-4b7a-8396-76079a0f7f13"
+                      LastKnownName="WaterLog"
+                      LastKnownLocation="Package_1912.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="27a623e7-11c3-467c-a7e5-12b4a478e01c"
+        name="Log"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="07e05fc7-b8bc-4ba8-b4ac-c7dfe6e7351c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLog"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="183cbde2-2fd3-43de-adf8-d04f9099e616"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36b87dea-ae33-4f26-8c47-4bc4043c8c5f">
+                <propertyInstance
+                  Id="78d8baf9-cdb5-4864-9de5-7ac280e59561"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="afaf3e3d-c7e4-48f9-80ba-d29e3765937c">
+                <propertyInstance
+                  Id="79cc679b-8451-4a76-9217-30143fb18553"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f83085a3-5fa6-4444-beb1-bf334c19add5">
+                <propertyInstance
+                  Id="236b13ac-01d8-4ae8-ab55-00ebda088791"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e739e98d-8ffb-4b47-b085-4989ff88a0de">
+                <propertyInstance
+                  Id="2427c050-ef9e-46e9-92bd-9bab44ecdf6e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cde8de29-d276-43b5-825b-a9705bfd9522">
+                <propertyInstance
+                  Id="902cae69-396b-42b8-bf28-f2fa2233d939"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="cf3d0359-c696-4f51-8beb-d38e13694cfa"
+            name="LogId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a5364acd-ba21-4a41-932f-e4c81842ff0d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLog Member%3DLogId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="afc829b7-9748-4a17-9fa0-6c9355f4b194"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e48426a5-e465-442a-87a7-444c1963da2d">
+                    <propertyInstance
+                      Id="244eaa80-4c98-4982-a46b-6c6a66ed8fbb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4729e7a-8042-487c-8b8f-47789737e4b5">
+                    <propertyInstance
+                      Id="2dd6e535-6abb-4eea-a70d-6ab691d9f229"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af185094-b537-41d3-8286-ac45b9eb657a">
+                    <propertyInstance
+                      Id="867d3f38-4e06-4e61-9a83-7a2f62c281f4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47ae5c45-ae10-4177-a723-73efdec4e657">
+                    <propertyInstance
+                      Id="75dcae5f-8278-4614-b0f3-235791b839e6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33c24ab7-1388-483d-a567-05a9c7bc86b9">
+                    <propertyInstance
+                      Id="6d63eb50-e929-4494-83d5-4d91271be910"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef4b9af5-3775-43b8-a826-bfead1ece1ac">
+                    <propertyInstance
+                      Id="791512ce-f96f-45a0-8906-890be3a8574f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="478a74e9-bdc1-4c83-919c-b3c2c7b775dc">
+                    <propertyInstance
+                      Id="28a4a150-e715-49c7-90f8-74b6fd535758"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4573a881-be03-4c80-b111-ed76af8ccade"
+            name="Amount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1f91c091-e662-4904-be8b-f64757c9f830"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLog Member%3DAmount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="117e11ad-40a1-4cd6-b71b-47693c7b19ef"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc85ad3a-7a55-45ba-863d-4653926835a5">
+                    <propertyInstance
+                      Id="96cd3c42-d8ce-48c2-b328-332da99b0f19"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af7cfa8c-7c55-4d29-96c2-771a51c8b348">
+                    <propertyInstance
+                      Id="34768ed9-bc40-41d5-b162-adf340877e72"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e253263e-6f45-42b4-a893-f464bf833fd2">
+                    <propertyInstance
+                      Id="cce242bb-88ce-4f8b-8353-b690d638538d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0d60e91-50df-4d31-8ed1-574e323f1a8e">
+                    <propertyInstance
+                      Id="64dfa33d-da0e-4bca-b339-22f1dee5356f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df68d8a6-f040-41c5-8d82-9387e6e2baa9">
+                    <propertyInstance
+                      Id="9fe8832d-f95b-4e15-8ba4-b3d81ab0bd8e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="574ab776-c8c3-480c-aced-fa150e1e51a2">
+                    <propertyInstance
+                      Id="285419b6-ab45-46e0-9f3d-d721be2cbcf7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c1f2ba5-e813-478e-8bf1-cd97f5b1ad0a">
+                    <propertyInstance
+                      Id="3786ccaa-1514-4e30-b578-a681a4dece7a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8749f890-04e7-4630-b1aa-0d9cd711ea3c"
+            name="Log"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2393dfe2-63b9-4b1c-94b9-724f1c792e8b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DLog Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d48ff10b-4272-4e7f-a202-d4130ccfef3b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bbe0b70-5193-4a05-b43c-7edd19efa352">
+                    <propertyInstance
+                      Id="4f0e89de-7d6e-4bc8-b73a-1286f0c7fa95"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec243abd-5012-4c8e-bb58-d02029e0dd89">
+                    <propertyInstance
+                      Id="79143f8c-8ca0-4380-adc3-cfab385c6412"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cc287d8-8d8b-47a1-af9d-d9068643a008">
+                    <propertyInstance
+                      Id="e063ee24-7dbb-4115-be1f-99530660d8c2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1390c2c-fc0a-457c-8349-8bddd1ec78f5">
+                    <propertyInstance
+                      Id="17a3350c-d4cd-49e3-aabc-eb514416f6ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f2ef8d9-5a20-4005-8c77-d4a3ca0f5e17">
+                    <propertyInstance
+                      Id="9051bec4-7a75-4e0e-8edc-f274785d501d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f23c106-3496-49bb-8262-2e6e0e6f53c5">
+                    <propertyInstance
+                      Id="bb0a4c0d-3454-4bf0-96d0-48abd6299966"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e5921503-a06d-4b7a-8396-76079a0f7f13"
+        name="WaterLog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2e0c68e8-ad89-40b2-beee-a22034a896ff"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1360d1ad-7d4d-41c7-95da-e006b9c120fc"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="da6faea9-dbf4-4a10-afaa-ff5875eadd05">
+                <propertyInstance
+                  Id="eb2980f5-0513-4359-9c18-0246dbcc2f9f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e25ccba-3828-461d-8e94-0ce36caccd64">
+                <propertyInstance
+                  Id="26e87050-7478-4cbe-be96-6b7d75f04390"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7f5f9da6-9e69-4f35-b6b8-86d8d23dcc25">
+                <propertyInstance
+                  Id="ba5aaf89-072b-4e85-9d0e-341c55332e41"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0de4c09f-6778-4b1f-8910-ba281a78315f">
+                <propertyInstance
+                  Id="0e1f8161-e9dd-4e29-9301-9ad3610cfbfe"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7c5be291-eafd-4a64-9b3d-9db0f6461ee1">
+                <propertyInstance
+                  Id="3f090bfa-9513-4815-b1a2-e95c1bc2e093"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="dede3abd-8a1d-4e84-b56b-bd17a1800fb9"
+            isDerived="false"
+            sourceEndRoleName="WaterLog"
+            targetEndRoleName="Logs"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="27a623e7-11c3-467c-a7e5-12b4a478e01c"
+              LastKnownName="Log"
+              LastKnownLocation="Package_1912.uml" />
+            <description>Property Logs references type Log.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="46dd2a79-4769-4fcf-8e39-f42c87ff9f7d"
+                  name="WaterLog"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7890ac19-755b-4863-929a-bcab19acaf7f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="333d4530-5d27-4a6d-8318-32c79e7ad9d3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3736665e-21c0-441e-9092-90daffb39d46"
+                  name="Logs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1fe3b852-bd5d-4f7b-9f68-26b2e710e903"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e95a323d-2b9a-417d-9723-98c60202ce82"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="204e5391-594e-473a-abd9-f4384bf15f0a"
+            name="Logs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0abc0b42-e1b5-4842-a52d-70583ad4515a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog Member%3DLogs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bcb54f05-d66b-4905-b329-2f26c731c869"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68899d8c-cece-49e9-9faf-84fcc81d51ac">
+                    <propertyInstance
+                      Id="beb62f3d-73af-41e7-85ad-0619cfdaa6f4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e280253d-0603-4d4d-92c3-d66d3dd5f62c">
+                    <propertyInstance
+                      Id="1277ada6-e538-4803-98a5-9084b7f9918c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2418ec2f-ff81-47d2-8a26-0d007aad4fed">
+                    <propertyInstance
+                      Id="42130e87-c3f2-4d72-86ff-7c7c45c2bb89"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5474f6b4-1c8c-4a19-8c96-4a24929ff9d7">
+                    <propertyInstance
+                      Id="56881c0a-adb8-4e09-99f0-de233b0a1bb7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc3bd092-ce8e-4e0c-9099-042609e5ddd7">
+                    <propertyInstance
+                      Id="36544597-7b9a-4a3e-9db0-1d7d126a35bb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1a92a17-a13c-4c24-8e5f-9150e32d2bec">
+                    <propertyInstance
+                      Id="493fefa4-cbd0-4a23-81ec-ea3ccfe23161"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbe3e909-4ce2-48dd-a562-a3f32b601036">
+                    <propertyInstance
+                      Id="9c52706b-9b54-4a93-b693-774e4821159e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="27a623e7-11c3-467c-a7e5-12b4a478e01c"
+                LastKnownName="Log"
+                LastKnownLocation="Package_1912.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e04e3f68-aa5e-4c68-9809-286d8e3fbd2f"
+            name="WaterLog"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="46490c9c-91c6-4619-beef-49098d094bb9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.FoodInfo.WaterInfo Type%3DWaterLog Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ad959116-aeee-4166-b331-586eb7302b97"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="053dc9ab-fb04-4834-9cba-2859247a46ec">
+                    <propertyInstance
+                      Id="6bf0d78f-b41a-44ea-b1e4-985ace134259"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bd2222a-4051-438a-9f7f-58d229ce31dc">
+                    <propertyInstance
+                      Id="f0e5eeb1-8987-4ccd-92a0-f99bc3a95054"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc3e5068-79d9-403b-bfa9-20f79609ae84">
+                    <propertyInstance
+                      Id="134fa7a9-e22a-4e1d-8105-e52c3e2159dd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e236e1f1-8ceb-42b6-b098-162c8452d302">
+                    <propertyInstance
+                      Id="061b5c2b-4908-403d-82f6-45189e498088"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8df663a6-935d-4d25-a2c8-40e36c3a6665">
+                    <propertyInstance
+                      Id="7820670a-9581-4bc6-b6eb-7d912e91059a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="707d516f-569f-4764-9c4a-85d0c028b8c7">
+                    <propertyInstance
+                      Id="61d6b0ce-1cbd-42ed-84c3-6da11a43d31d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

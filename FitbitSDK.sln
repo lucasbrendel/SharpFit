@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitbitSDK", "FitbitSDK\FitbitSDK.csproj", "{B4021928-D395-4540-983F-C49D2ECC89E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B3EACB16-A5CE-4176-9D6F-1673D8B83804}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitbitSDKTest", "FitbitSDKTest\FitbitSDKTest.csproj", "{460DB9B3-0E25-454A-B699-E50342D5E277}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4021928-D395-4540-983F-C49D2ECC89E3} = {B4021928-D395-4540-983F-C49D2ECC89E3}
+	EndProjectSection
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "FitbitSDKModel", "FitbitSDKModel\FitbitSDKModel.modelproj", "{754FB171-F5C0-4849-BA01-EB9E57DCD059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitbitSDKModelLib", "FitbitSDKModelLib\FitbitSDKModelLib.csproj", "{7B0B45F2-E3D2-464F-91E9-BDD16DFD6510}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lucasbrendel.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FitbitSDK\\FitbitSDK.csproj
+		SccProjectName1 = FitbitSDK
+		SccLocalPath1 = FitbitSDK
+		SccProjectUniqueName2 = FitbitSDKTest\\FitbitSDKTest.csproj
+		SccProjectName2 = FitbitSDKTest
+		SccLocalPath2 = FitbitSDKTest
+		SccProjectUniqueName3 = FitbitSDKModel\\FitbitSDKModel.modelproj
+		SccProjectName3 = FitbitSDKModel
+		SccLocalPath3 = FitbitSDKModel
+		SccProjectUniqueName4 = FitbitSDKModelLib\\FitbitSDKModelLib.csproj
+		SccProjectName4 = FitbitSDKModelLib
+		SccLocalPath4 = FitbitSDKModelLib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4021928-D395-4540-983F-C49D2ECC89E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4021928-D395-4540-983F-C49D2ECC89E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4021928-D395-4540-983F-C49D2ECC89E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4021928-D395-4540-983F-C49D2ECC89E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460DB9B3-0E25-454A-B699-E50342D5E277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460DB9B3-0E25-454A-B699-E50342D5E277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460DB9B3-0E25-454A-B699-E50342D5E277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460DB9B3-0E25-454A-B699-E50342D5E277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754FB171-F5C0-4849-BA01-EB9E57DCD059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754FB171-F5C0-4849-BA01-EB9E57DCD059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754FB171-F5C0-4849-BA01-EB9E57DCD059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754FB171-F5C0-4849-BA01-EB9E57DCD059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0B45F2-E3D2-464F-91E9-BDD16DFD6510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0B45F2-E3D2-464F-91E9-BDD16DFD6510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0B45F2-E3D2-464F-91E9-BDD16DFD6510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0B45F2-E3D2-464F-91E9-BDD16DFD6510}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

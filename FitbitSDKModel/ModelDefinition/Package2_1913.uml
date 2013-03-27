@@ -1,0 +1,1810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3996c41d-7e8d-41ed-a58d-bf2206a10d11"
+  name="SleepInfo"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="4b64aafb-6de0-4f9c-a68e-4e3a251f08ec"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DFitbitSDK.Resources.SleepInfo"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="27278043-92bf-464e-9dcc-e6ce935de5e6"
+        name="FitBitSleep"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ed1fbeb9-a05e-442d-a754-ff4c15ae67df"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DFitBitSleep"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="abc13ce2-0d75-49b9-9810-2519c98b2440"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce144cbe-0a26-49dd-9393-c3c5d4297de1">
+                <propertyInstance
+                  Id="d25cd6d9-12d8-40eb-8ca6-27a887565953"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4984e5cc-0ea5-4440-a8f8-5ab8438dac3d">
+                <propertyInstance
+                  Id="6ddfe7ec-0d3a-4dba-8123-c2d0755086e5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7fc8308e-d78b-4512-a067-8b86e9645dce">
+                <propertyInstance
+                  Id="ee339036-216c-4aa0-b435-08bfe507f37f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3be890a1-844e-496c-8f83-b40b50b613f4">
+                <propertyInstance
+                  Id="b6e137e4-9228-40a4-af95-8c4ec4472f6e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2f403a5-3426-405d-b10b-0bdd2e448303">
+                <propertyInstance
+                  Id="f3c53547-8b1d-4617-ad5e-a3738ca0c519"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="686daa4c-152f-423c-bbc2-6bedfb7036c1"
+            isDerived="false"
+            sourceEndRoleName="FitBitSleep"
+            targetEndRoleName="Sleep"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="628b9837-23d6-41a5-afd8-e13dacd0363a"
+              LastKnownName="IList&lt;Sleep‎&gt;"
+              LastKnownLocation="Package2_1900.uml" />
+            <description>Property Sleep references type IList&lt;Sleep‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63e9e74e-f135-43a3-972d-8bb6ee4a586d"
+                  name="FitBitSleep"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="681ebf32-e2c9-4ac5-bca4-34c443b18c8c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1b1f6c72-32b3-4b43-83f4-abe83148b610"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e1e0793-cf52-4bc0-b7d6-120d2c0b852f"
+                  name="Sleep"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b8e0dacf-8f6e-4779-b45d-427202d36b4d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0eda0aa2-d21d-48bc-b4cc-f1b8a74ef470"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="287c0985-bc81-42d6-a58a-3f292c774e9c"
+            isDerived="false"
+            sourceEndRoleName="FitBitSleep"
+            targetEndRoleName="Summary"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0904fe76-8526-47c6-b1f1-085a9c5df9aa"
+              LastKnownName="Summary"
+              LastKnownLocation="Package2_1913.uml" />
+            <description>Property Summary references type Summary.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80715a0a-a429-4cb4-bef9-311d0fbfc005"
+                  name="FitBitSleep"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="115271dc-c0b3-4111-a4c3-5ba1a803962e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8a166c84-3f84-4d33-aca2-48cbf8d9b91b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="066939c3-08a4-4b64-abf8-ef6937e657f8"
+                  name="Summary"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="23c67dc8-7911-4805-a116-fb71a33dfaff"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9463d984-8f34-446e-9349-5a58626acc87"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d6490881-dbca-47ea-b9fb-23c3281f2c19"
+            name="Sleep"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c676d9cd-33ac-432b-8434-3db954a71615"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DFitBitSleep Member%3DSleep"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="025b6de6-aa2b-4351-bcf4-38cf99f93cd0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d75808a-29d9-4319-886b-25a47c4e1395">
+                    <propertyInstance
+                      Id="e79a2b88-675c-462e-9ebe-35f768d0ed50"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5a0a784-d603-4035-b0f6-96d7f15da66e">
+                    <propertyInstance
+                      Id="aa18ac19-8ded-42c5-aa22-76ba380ada0d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3163d779-4de5-40b2-9d20-1c8e0900dcf3">
+                    <propertyInstance
+                      Id="e6eda851-03dd-48db-b4bd-13b92c300036"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbc62ff8-c1b3-4832-8d3e-d78d6d59ab5b">
+                    <propertyInstance
+                      Id="3a975469-f5a6-48b4-af8d-5469edaeff4d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f1466a5-795d-43eb-9ce9-13664f95f049">
+                    <propertyInstance
+                      Id="3a9163c1-c863-43f0-9479-0406b9b40e53"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b534ed8c-4b8e-4d6f-9c62-4cda247051b9">
+                    <propertyInstance
+                      Id="6b996970-1343-4a1a-8934-a128a0ea7144"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd9bc97d-e9f6-44eb-9f41-1fc810a34435">
+                    <propertyInstance
+                      Id="66995f97-4663-4f7d-8a37-8188019e47e0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="628b9837-23d6-41a5-afd8-e13dacd0363a"
+                LastKnownName="IList&lt;Sleep‎&gt;"
+                LastKnownLocation="Package2_1900.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dee69c96-ccad-40d6-bbc4-67216bd76556"
+            name="Summary"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="979a494a-2704-4d94-87a5-5152697e2bfa"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DFitBitSleep Member%3DSummary"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4fa84888-b8af-4731-99d6-c12a69fb8737"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0a3a415-645c-4155-9b94-44f03fe589d4">
+                    <propertyInstance
+                      Id="98421e19-274a-4232-9c7c-7fe18adad777"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fb5eac4-d446-48e2-9c9d-37aaf3c81367">
+                    <propertyInstance
+                      Id="0d539e07-13ab-4828-91d0-395de975cbc7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec73af16-60e4-4787-9369-b631dee81d2c">
+                    <propertyInstance
+                      Id="c84c9f3c-bb64-401c-8c8a-94aafa04a955"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3346bd0-95e7-4040-9c31-7d65df6eb5a0">
+                    <propertyInstance
+                      Id="a470d78a-3dbf-4421-90b4-08427a5d19f4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e998e776-649a-4c6e-8654-033450a5de86">
+                    <propertyInstance
+                      Id="456a8ef7-770f-4939-a9f9-56a90348aa62"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97256481-e7f2-423a-a67f-3e06104ab562">
+                    <propertyInstance
+                      Id="65fa801e-04c4-49c4-b56d-08f4fdcaf4bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42b56b47-79ca-4b69-beec-108734db5bb8">
+                    <propertyInstance
+                      Id="102167cd-1f92-4503-a3f7-97faf0e017f1"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0904fe76-8526-47c6-b1f1-085a9c5df9aa"
+                LastKnownName="Summary"
+                LastKnownLocation="Package2_1913.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b8307ace-26e3-4afd-90c6-5b746f460bc7"
+            name="FitBitSleep"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="41e0eef4-6703-44fb-a4a6-775a586be591"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DFitBitSleep Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6d30aee-5ef6-4789-a8bc-b71b64a06b40"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94a16fd5-a8f1-4c82-9082-ce0367ab55b6">
+                    <propertyInstance
+                      Id="c0b91572-d95c-4242-b696-bac14cc8faba"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17031059-9bd9-43bc-a0dc-99d44c443658">
+                    <propertyInstance
+                      Id="48275e18-6605-4ca8-aa69-38e4fe2b2d3e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6476a828-4852-41ea-b716-408efbd69ba3">
+                    <propertyInstance
+                      Id="f730a103-5ee8-44c8-9e39-ae4b596ed723"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81f5ca98-6fb1-4cf0-a42d-7e2fec369ff2">
+                    <propertyInstance
+                      Id="900dc0df-2f86-4c0f-867f-7b58488a2f94"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d71294f9-59e7-4f1e-9b31-b02ab45c1465">
+                    <propertyInstance
+                      Id="4619bb65-eff5-44f2-97c6-c0ae539e4bc5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="850fe5ad-b556-47eb-b27d-1ca754f7a44d">
+                    <propertyInstance
+                      Id="01653d0d-bd9a-4e59-9c64-77166273b8eb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c89e19de-e9ce-4f82-a539-d62e8f38964d"
+        name="Sleep"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e774bc70-846e-48bf-8324-061de1888a7c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a263682d-6e68-4315-9897-8ebe22c2a985"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89848546-a46c-4b0d-8e03-bc592f77fc34">
+                <propertyInstance
+                  Id="e660ad6b-7d1d-4fa1-9732-c6aa35ed03b7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a4e9ec8-e4ce-4420-8f49-a1174c11ce59">
+                <propertyInstance
+                  Id="e8b0b361-1162-4d0b-a224-d1ace1be6e67"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8285d0b8-a8bb-460e-a4ac-19b6c2bfd210">
+                <propertyInstance
+                  Id="b246c737-b304-4e0e-9c48-ea8df18fbda4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e027818-eb88-46e8-8519-2187a6413cec">
+                <propertyInstance
+                  Id="ab796d41-4d44-41f8-8881-b7489dcc2db0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e84f8ec3-cc5c-4ab1-b7ac-33054e2a821d">
+                <propertyInstance
+                  Id="5f3684bc-3d6d-46bb-b7e1-9909486dbe48"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="7e0ac07d-863d-4ab5-9a8f-e60a4b201df2"
+            name="IsMainSleep"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="912bad65-24e6-45c5-bc00-150202364e79"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DIsMainSleep"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57a86741-776e-49d1-b197-730ee31ede2e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbd22046-d350-468e-99ef-97e3dfada739">
+                    <propertyInstance
+                      Id="67bd8690-aac9-46bf-9773-f6e17c671234"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e9cabea-1cdd-4a0f-a340-a8394286b280">
+                    <propertyInstance
+                      Id="0815324c-c59a-4357-a285-baddcb116578"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79d43e04-0470-402c-9c07-02d8099ba23e">
+                    <propertyInstance
+                      Id="ecaa49aa-2823-4d3a-a2a3-99fcaf313e47"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d272b82-1992-46e3-a60c-50186d980466">
+                    <propertyInstance
+                      Id="0d1e41df-a769-4511-b6b7-14a1a8f34d55"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81945431-42d1-4642-b279-d57504cf3dc0">
+                    <propertyInstance
+                      Id="ae013685-c480-4841-927a-982985101fe6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e50ffa5-2fb8-4e6f-afc9-a61570ce7410">
+                    <propertyInstance
+                      Id="5d0bc0d4-0510-4fd2-9585-59b2d609a5ca"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42024c6f-15f2-4b0f-8dad-66dd620138b9">
+                    <propertyInstance
+                      Id="362014dd-ad46-4228-976d-a51a27377005"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f0386f91-2c76-47ed-9a61-a0c16ddb11a1"
+            name="LogId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="48fba3ee-acbf-42e1-a27c-7b782a78653c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DLogId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8c016cd1-7392-451b-b5a3-75648c6a1ce7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b2ab6d1-4506-4a1f-8349-e43b9464d666">
+                    <propertyInstance
+                      Id="7f01ee88-8282-41d0-acd4-37f7f3c5a009"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe983e65-ab29-4a5c-ad92-11715fe0cd2c">
+                    <propertyInstance
+                      Id="aeb0f145-056f-4958-a4b0-83766e5d2216"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a324f435-ed79-4679-a211-8a4a8452112a">
+                    <propertyInstance
+                      Id="5042f003-0bc1-4b1e-9683-6787e6c02bb6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a1f1a84-949b-4c32-963a-60d8b35aa28c">
+                    <propertyInstance
+                      Id="c6e028f7-bf6b-4233-9776-ffafe614ca6d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b840321-42d1-4480-800d-ef615f6b7260">
+                    <propertyInstance
+                      Id="6cf8e696-4b17-4eb3-91c1-dffb90bdb53d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4e320a5-d707-4666-ad90-98a12c20fac3">
+                    <propertyInstance
+                      Id="f2fa3bc9-9d74-4b65-be28-22c66cda9526"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be37f8cf-19c7-4967-a94d-929eef5956e5">
+                    <propertyInstance
+                      Id="0320d3c0-baa6-4580-bdfb-0a9806ef80e2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ebbec6fd-9378-4575-9f03-297dad53e8c1"
+            name="Efficiency"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="de0555d1-bd78-4d4d-8430-4fa0af347ca2"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DEfficiency"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4a61833c-2ced-4150-8275-c9094197adfb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="739b00ba-ea4b-4f7e-9d6c-2232e99db0af">
+                    <propertyInstance
+                      Id="3c7795e7-ae00-4f04-a1ae-f08e633405e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb95dbb1-5a85-4b48-b7ed-ccc6c696962a">
+                    <propertyInstance
+                      Id="3db25dda-bf7a-45b2-b8a9-d9e13a5ff41c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a731462-8a77-4be9-9b75-401f993175ca">
+                    <propertyInstance
+                      Id="b2e174b5-acf4-4eab-95a3-799dd2a430d7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9557b772-e7e9-49c4-9aa1-1e1093d9dfcd">
+                    <propertyInstance
+                      Id="950e834d-dd9e-4346-b809-0795a3172684"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="216a91ac-049b-40d4-bd94-077a01368553">
+                    <propertyInstance
+                      Id="a7af9011-e6d0-4caa-9c9d-e46436fbcba0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeee41da-27f2-4b37-93f7-3c323e082632">
+                    <propertyInstance
+                      Id="7e77d237-3a5a-4b52-bb05-fd7a828f5c00"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ecfca64-aa41-4b4c-8611-18a861cf7677">
+                    <propertyInstance
+                      Id="a5ad9536-2b97-4483-89a1-c7669674c008"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="17af6ac9-f3f4-4607-a199-48fce9a9c87c"
+            name="StartTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e7e21e2d-842b-417f-9222-0aca7c8b1c37"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DStartTime"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81e30695-453d-4bb8-ab4c-3f4746c4add3"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f49a4b9-0615-436d-a9e5-eadd487d4fa2">
+                    <propertyInstance
+                      Id="062e2ebc-f344-40ee-a62b-75d37ab85637"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab64e3d6-cd73-42a0-b312-433d899740ad">
+                    <propertyInstance
+                      Id="246d0904-6afa-4fb0-9e4b-e54044a171fc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffcfd60a-06ec-4065-a7a5-f43310ffb10f">
+                    <propertyInstance
+                      Id="9bd92931-7321-4ed0-9733-89994f1a42bb"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adf6f233-2bf7-4a41-baa5-125496ebdf1c">
+                    <propertyInstance
+                      Id="732acf76-6048-42ed-9481-b4fe0544d046"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81cbdcf2-2353-431c-b61e-f0a7ebdb7d6b">
+                    <propertyInstance
+                      Id="34c5eaf5-a0d4-4d0e-8972-0dcb675d8268"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed70a1b3-7754-4b9e-8d47-6e8762303980">
+                    <propertyInstance
+                      Id="2b7c4b31-3665-4751-893a-4298edc36308"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c6a5836-b721-4938-82f7-bbbea3275ae8">
+                    <propertyInstance
+                      Id="bc5ced5e-b7c7-4ebe-a3b7-8a4b5dda4aed"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1eecf05e-a712-4dfa-902b-27fab5fbe956"
+            name="Duration"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="15f34cdc-14cf-40de-bb86-04799a41f0e0"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DDuration"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7efd25b5-d2c3-421c-8b11-06b5469dcacb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76328098-912f-4a9a-8c5e-813f24dbc64c">
+                    <propertyInstance
+                      Id="2e979fd7-db43-430e-ae98-ae173b7a8dff"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6b3cc52-50ff-40a9-beb0-fe5e499decea">
+                    <propertyInstance
+                      Id="e031daae-14d9-4159-a6d4-4421aebe8e04"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3435668-db98-4357-b86c-be71a1f1bd0b">
+                    <propertyInstance
+                      Id="48bddd36-b243-4e8a-8013-79c6f10e4417"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e414754b-e827-42a0-a803-679407236bb0">
+                    <propertyInstance
+                      Id="77416f6c-56dd-46b0-88a9-de1c74a90abe"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f3d9d19-4a6a-4bcc-9856-c383572d2893">
+                    <propertyInstance
+                      Id="c10dc9f5-093d-4d1e-84f7-6a2d3215d1f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="813120b9-1fb0-4610-97e2-8f0d4a5ad3e8">
+                    <propertyInstance
+                      Id="a6200efa-cc81-4d69-8fb5-c82f2d13939f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3453546-78f7-41ed-9e05-d84f911a6148">
+                    <propertyInstance
+                      Id="c7fb13e2-1c0f-4287-a011-cadb2acbc1e2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c31fc649-a8fc-43ff-9e77-fdad4c9ae18f"
+            name="MinutesToFallAsleep"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5fd33e69-21e2-4871-8f58-e198bcaa2229"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DMinutesToFallAsleep"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4a2a8916-77f8-4350-9e0a-83abb7a79b72"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3417d2f-ba0f-4271-b7dd-d0491c613f5d">
+                    <propertyInstance
+                      Id="2bf72007-c5bd-4f3d-a894-2fac983827d5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4dad031-9f5b-4ad0-a5e8-e5a70c26feb7">
+                    <propertyInstance
+                      Id="f0116910-09bc-4be8-8c5b-744fddc7cbf1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aac9d1ca-d23b-40eb-91aa-8e52717075b4">
+                    <propertyInstance
+                      Id="f0d64669-9349-4e5c-9b7e-23a06ec8f105"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fefd7e7-6532-4ace-85be-d3364c9c5856">
+                    <propertyInstance
+                      Id="bd051f16-1b2c-4725-a017-5a46c1a67cf3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59591080-83bf-4af7-9470-1c29ace23417">
+                    <propertyInstance
+                      Id="235ed551-4eb9-447a-b139-49fa5f0dbe1d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="846bd127-5f03-46bd-9036-a63876a18668">
+                    <propertyInstance
+                      Id="e28f1480-60be-483c-917b-56dd221361fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4218ff29-b517-447c-a247-37f2a8343cc5">
+                    <propertyInstance
+                      Id="4bba660f-85e1-43da-a996-b1ea74620a35"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7ef834ed-eb91-4e9f-ad18-e0688065b72d"
+            name="MinutesAsleep"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0bd70d02-90f8-4f99-9aba-30e205c71fb3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DMinutesAsleep"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="198a5c33-e391-40a3-a8ce-4ecd76b67052"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bb860cd-d343-47f9-b67d-c1ab22a04b24">
+                    <propertyInstance
+                      Id="5caf8614-a083-4261-af06-cda8492a41ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93e56579-ac18-4550-a787-2fd8c98a781a">
+                    <propertyInstance
+                      Id="9360786b-1db9-4f49-bc93-28fe15aebe3b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50e24c4e-4ce7-4f93-b980-0a0ab9a8a180">
+                    <propertyInstance
+                      Id="555841e4-2595-4cba-9969-b7eeedb5948d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93026189-dec8-4337-b394-ee4b19e8725c">
+                    <propertyInstance
+                      Id="29d2f76a-df06-4135-bc8c-49d277c4ac44"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe33a317-238b-4c6e-bde1-e29b2c677149">
+                    <propertyInstance
+                      Id="cc3f5d09-5dda-467d-ab1b-444ee08692c5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25d7b96d-4801-4874-8509-cbbfc22de28e">
+                    <propertyInstance
+                      Id="89d9f08e-20ba-4a88-b9af-c14b15ba7c31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9dc80bdf-1bfa-48e5-80b4-776bf3c33c13">
+                    <propertyInstance
+                      Id="3a2057ae-6bc3-4ac2-989f-4b4d7debb977"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b283c87e-6bef-48b4-8f68-0502dd6fc173"
+            name="MinutesAwake"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0be41a1e-38ae-4381-aa00-c0d59652d6bc"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DMinutesAwake"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="235e011b-12a9-49db-b534-c8c23d15d71d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a91ceb6-b9eb-43dd-877b-f731617372c5">
+                    <propertyInstance
+                      Id="e3bad23c-0fd8-477d-a9f9-1c83edf9e5c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="803eb150-a3cc-4d6f-8b4b-b79b41b69b01">
+                    <propertyInstance
+                      Id="e81885ab-47b6-429e-b1b3-53259eca4a1f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f2ab6d1-2784-4ad0-bd50-22c2d68b0404">
+                    <propertyInstance
+                      Id="f81bd0f2-39f8-4217-82e6-fc46157417b5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7855ed63-65b0-42f6-b69e-47e881be0a9f">
+                    <propertyInstance
+                      Id="974eed8d-fa1e-415f-8d97-c12103fc8738"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f24672c7-fc5c-4688-a485-c1ab5b6094c8">
+                    <propertyInstance
+                      Id="33b27be2-60f2-41bf-a055-cc62bf870a1c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de47bca7-5761-47ec-b380-83bec8944f1f">
+                    <propertyInstance
+                      Id="72d3c6e1-f025-4f21-a616-93e88d8d7b16"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62a732f4-c0a0-4628-b42c-0fa739f852fb">
+                    <propertyInstance
+                      Id="e28d1918-3f31-4193-911b-196cb4d1027f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ede66902-ab50-4d29-9e98-4661e8a62ff5"
+            name="MinutesAfterWakeup"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a2547c84-eb03-4d79-95d5-394cd4a61fad"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DMinutesAfterWakeup"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="03ae7dba-2be5-46a4-82ba-4a96a36d337b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="670b757f-f3fd-425c-9ab0-41b29ba03527">
+                    <propertyInstance
+                      Id="461c687b-e008-4248-a6f7-e2fe29f6a8fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3f1947f-89e5-4deb-874f-b6a94c3257b5">
+                    <propertyInstance
+                      Id="2696b36b-e2b7-4514-9fc4-ed266a65fb8e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f04caa09-12fe-4878-be05-bca67be2296d">
+                    <propertyInstance
+                      Id="e286b036-4131-49a4-8033-7fe4da984ab7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49e68e3d-0fb4-4439-8316-c588bc1c7f10">
+                    <propertyInstance
+                      Id="bb1361b2-997e-4c49-8867-f3ca81559445"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bf3b721-63ba-4d3b-994c-cc306bf84a38">
+                    <propertyInstance
+                      Id="bcec1196-0599-4ae5-9125-33cd05d61aa4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02cebcea-1fc6-468c-a3ee-527b6d844b99">
+                    <propertyInstance
+                      Id="a92f77b3-92bb-479a-9e6b-babe7c6e4178"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0186446d-e49a-41bd-8b4b-4ef031e1e7f1">
+                    <propertyInstance
+                      Id="ad7256b2-0869-4f58-bf02-6ce1bc8326aa"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a3eaafcd-363f-42fe-b8a4-4cbe017e43d4"
+            name="AwakeningsCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4e913779-ff92-41dd-aaf6-8eccb7ece4c5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DAwakeningsCount"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3fb8ed5b-c547-400b-be2b-781088008f62"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce2d2a60-621e-4c24-ac74-d341e1c0f709">
+                    <propertyInstance
+                      Id="db456ac5-7437-4c86-aff9-996684abc59a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2b4edc3-d6a1-4804-a0bb-dcb9cc1daa76">
+                    <propertyInstance
+                      Id="06cdf2fa-c547-4f26-9b08-5c5322845dec"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4664176-59e4-47cd-a23b-2534049dff30">
+                    <propertyInstance
+                      Id="0c4516c4-8fe5-45fd-a934-a733f1ca7a92"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="782810ac-f23c-40ef-8f93-d4c21ae4d153">
+                    <propertyInstance
+                      Id="7d7433b8-e1cb-4784-9ca1-07a2657a235a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87549fd4-e3d5-49c2-8eb8-fa040d3dfe9c">
+                    <propertyInstance
+                      Id="1b522b3e-6cf5-4602-877d-6b5be34bbc3d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5b74ab3-7dd1-4584-9b5a-ddb3279df9ae">
+                    <propertyInstance
+                      Id="84749fcc-03a5-46c9-bcb7-7547c8c2c397"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73eb4200-96d3-4814-b5b9-264378e2a290">
+                    <propertyInstance
+                      Id="b07c0202-f24e-4189-87a7-63465d0b061d"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2a4b3754-6201-498c-92cf-14b32f90fecb"
+            name="TimeInBed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c0763a99-408c-4e4c-a732-08edd20536e8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3DTimeInBed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="61811e16-0263-4322-9d7f-34dd76a55325"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25100c5d-45d2-4c93-9c9a-cd05dd48f8f0">
+                    <propertyInstance
+                      Id="cf7c6993-0fe1-4838-8976-9c11959e61a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="201d953f-35bc-4f15-ac29-5a2fbf8767de">
+                    <propertyInstance
+                      Id="f1267011-ec18-406f-98c6-05de714020c0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c27ee6a8-9e0b-409b-a221-355c5d63c46f">
+                    <propertyInstance
+                      Id="8552a145-9210-48b5-8f25-a9006e72bb66"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d976cf86-8e3f-4794-942b-15bdeccbf0b9">
+                    <propertyInstance
+                      Id="903dfcc6-8b8b-4e6c-b916-d25c5f32c90b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb24e44e-979e-426e-9fe6-6924582612c5">
+                    <propertyInstance
+                      Id="9182331a-c514-4d35-98de-f91165319e78"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69b42b66-787a-4214-ba43-711576d238ba">
+                    <propertyInstance
+                      Id="7bca209d-2c42-46d6-be70-b11824b6d131"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ab551a2-ac74-43e5-962e-febb34edc24f">
+                    <propertyInstance
+                      Id="273156b3-b0a3-4ed9-b39b-95958cc2153f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="de84a7e0-dfbe-48bf-9d3c-7b04cea9c286"
+            name="Sleep"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1969e7af-6668-4095-97f9-e456a6661c09"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSleep Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="37a492b6-50ad-49c0-a412-90ee75ecf4af"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2aa0a5b0-bd07-4cab-b581-cae91745ee10">
+                    <propertyInstance
+                      Id="d5280e1e-b3c5-4fda-9493-03bb31b4663b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd60e4c1-777d-43d7-8bfb-3e8a58ef4d35">
+                    <propertyInstance
+                      Id="87332242-beb4-4dde-80f3-cf644241ae34"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="842b8037-fa3a-4627-b72c-908ca5ece5f1">
+                    <propertyInstance
+                      Id="96bb7c0d-025e-4ba8-b374-2d05c233486b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4472702-bdce-4233-ba92-d83eff79a0a8">
+                    <propertyInstance
+                      Id="c1a6a5cd-ab47-40fc-adbb-e612c5a64e25"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a0ed2a9-ea8d-430e-aee5-9c9bb0e1045a">
+                    <propertyInstance
+                      Id="98c33851-b304-4f98-9d3e-6a575052789a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0b036a1-7f21-4144-801d-1104679d48ea">
+                    <propertyInstance
+                      Id="6156c35d-461e-4cd4-afb0-d47ecddb6d77"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0904fe76-8526-47c6-b1f1-085a9c5df9aa"
+        name="Summary"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="680c76cf-ea22-4bf9-969d-5a4294a3685a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSummary"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d873c810-ba21-4bd1-b19b-3d1bdb883ada"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="725fdcaa-bc9b-4afd-9c03-46d1c67c844e">
+                <propertyInstance
+                  Id="5d1add7a-5096-45ce-9c03-25d3f001221b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ea21b33-a4ea-49dd-b89b-34e671346205">
+                <propertyInstance
+                  Id="13741c3e-c22e-458e-9ad7-5164b63a1b6e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca496a62-7e1d-4d5e-9379-7c890552b9b6">
+                <propertyInstance
+                  Id="28070f89-8859-4387-9df4-978e58dbd1fa"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="151d3e43-ba14-4652-bd12-8a21249e3066">
+                <propertyInstance
+                  Id="243a3a4d-ec21-4431-a902-2eb2c98844da"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89f27f28-3762-445c-9ff8-a696d086c652">
+                <propertyInstance
+                  Id="f393d25f-da6b-4e24-a6b6-adddb4e04a9e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="fc34a0c0-f572-4827-bc5e-e441aca0e88e"
+            name="TotalMinutesAsleep"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2c273be1-8439-42ea-86b5-a394ac940953"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSummary Member%3DTotalMinutesAsleep"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0f0e7348-4474-47b1-97d8-39b317af5582"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9b6c8e9-4774-4f09-97f0-cb5dd1c943c0">
+                    <propertyInstance
+                      Id="31f84f32-0edf-4c32-adb1-2e5e977b62fb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5901c01-a1a1-4a0e-87e1-6cd83d2479b2">
+                    <propertyInstance
+                      Id="2fd74fa0-bf92-4ff5-be1d-ba97924e29fb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="711af879-a49a-4cd4-80ac-ebc744ebfd63">
+                    <propertyInstance
+                      Id="4efd9e40-8bb7-4f81-9563-a85823dcb55c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f45218f-def3-4d75-9e3b-b422eb9a0e12">
+                    <propertyInstance
+                      Id="e0f2349a-bcc5-4081-a486-e9a57ee984a9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54d3291b-6076-4c74-89c0-9fe5b1a0ff42">
+                    <propertyInstance
+                      Id="3241d77c-39eb-4a62-bd3b-1ddd459059ec"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0bb3818-f3a1-4221-b092-562e4672ccc3">
+                    <propertyInstance
+                      Id="027e5604-a5e2-4afa-be49-1c770bcd44fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c2b5895-786c-425d-a059-411e38fe7acd">
+                    <propertyInstance
+                      Id="c9d846bb-f2ad-4e6b-9611-390fcf0da3df"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7e2796cf-1e5d-442e-91f1-c331959b0b2e"
+            name="TotalSleepRecords"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="402a50b1-d589-494a-811a-036e4dbd8359"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSummary Member%3DTotalSleepRecords"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88a8ce00-2149-4b7e-8e6f-7838bfd86c55"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13b2833c-a7c7-48d3-b7b4-742c05650bde">
+                    <propertyInstance
+                      Id="c1210a9e-5427-4b3b-9236-b076071fb1db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe41a217-0c40-4fb3-a46a-782e8355f3c1">
+                    <propertyInstance
+                      Id="be639948-36fe-4e84-adeb-bcd36353a2f4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8da2cc64-1062-4982-bf5e-362a17af3bc0">
+                    <propertyInstance
+                      Id="9fabbbdb-0f52-4f65-b14a-38358ac4d4a2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fade10a8-7e23-4490-94e9-47a1b63865a2">
+                    <propertyInstance
+                      Id="d642acfc-2c42-45a7-93cd-1c3862e00a8f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b6608c6-e9d8-42f8-91b0-e9a22683950a">
+                    <propertyInstance
+                      Id="decc82b1-14f1-43fa-917f-6bc947f6b96e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c16bf489-6b56-4220-bf2a-4f54cb7fa7d3">
+                    <propertyInstance
+                      Id="0bf30d1d-fa24-4c36-a92a-ab465f12dba9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bc668cf-6f9d-4f6e-a89c-71dfdf4af755">
+                    <propertyInstance
+                      Id="d185cdeb-2566-49d8-b86c-da6928880aa2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="afd5026f-bd02-4d8f-8c27-89ecb93a0bd9"
+            name="TotalTimeInBed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3a43ba22-3e65-4a55-b408-b68cc4b003fd"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSummary Member%3DTotalTimeInBed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9a3ac664-2282-40d4-bbfb-0e79979e8105"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1faa956-1b78-473d-9070-2f5a989a515f">
+                    <propertyInstance
+                      Id="d052768f-a803-4ce3-8629-3a808ba48421"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="829bc7cd-3b50-42b8-9e47-29bc9cd47bcd">
+                    <propertyInstance
+                      Id="b3b9340b-b897-4ce8-8b3a-0199b3657e95"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2a82b65-1a25-4500-af90-adcb4f461e3f">
+                    <propertyInstance
+                      Id="4eb93e35-c61a-40e1-88e5-8bc61042b432"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41215691-9bcd-4728-a4e4-e7156b023fa6">
+                    <propertyInstance
+                      Id="7ba355cb-df82-4952-8a3d-2bc87aa21829"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5eaca0c-60b4-4c77-80de-db8610736999">
+                    <propertyInstance
+                      Id="3f61fd4a-464d-46e9-a5c6-ba46074f8295"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87e77e0c-6032-44fe-9ef3-0ae944d88d68">
+                    <propertyInstance
+                      Id="0d32cf63-5bc6-4217-844b-73373acd469e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c823225b-883c-4e2d-963c-dc8e43fc780f">
+                    <propertyInstance
+                      Id="ed6eb589-cb86-4503-9999-00d7e8752ef1"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="FitbitSDKModel.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="220d0f97-a559-442c-aaaf-020c491e0e64"
+            name="Summary"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4ce83996-3807-42f9-89fc-87995f9a5675"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FProjects%2FFitbitSDK%2FFitbitSDK%2FBin%2FDebug%2FFitbitSDK.dll Namespace%3DFitbitSDK.Resources.SleepInfo Type%3DSummary Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8aa3fb17-ab06-4c18-8d7c-c54e840e0a79"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87ba2c80-ca47-4dea-b955-5f0a84e9b520">
+                    <propertyInstance
+                      Id="031eba17-1d38-4eeb-b7a5-225532263644"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0d54114-51f4-4574-9137-28aa8e91b8dd">
+                    <propertyInstance
+                      Id="690c6a69-0eaa-40d5-adcf-c11888543a7f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be085f7b-885a-4590-88ab-f5a88e7da841">
+                    <propertyInstance
+                      Id="a1eea2e0-c3bc-42d2-b57d-e8e823413f4b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba567316-bf1e-4337-895c-db95534654db">
+                    <propertyInstance
+                      Id="43baca5a-3cc4-4dc7-947d-09b9590f7844"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f44fb01-f004-4281-ab1c-9c85267de040">
+                    <propertyInstance
+                      Id="da5bb2d7-450f-4f07-a4f5-11b968dadaf9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65e1c2f2-ed6a-43a2-9257-a0bd4b78ae89">
+                    <propertyInstance
+                      Id="542e7b60-a2b5-4df9-91d1-a9c14ea7b68a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
