@@ -8,13 +8,20 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.SleepInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class FitBitSleep
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("sleep")]
         public IList<Sleep> Sleep { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("summary")]
         public Summary Summary { get; set; }
     }

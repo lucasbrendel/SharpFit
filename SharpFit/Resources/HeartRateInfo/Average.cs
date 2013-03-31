@@ -8,13 +8,20 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.HeartRateInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class Average
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("heartRate")]
         public int HeartRate { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("tracker")]
         public string Tracker { get; set; }
     }

@@ -11,22 +11,35 @@ using SharpFit.OAuth;
 
 namespace SharpFit.Resources.FoodInfo.WaterInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class Water
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("amount")]
         public int Amount { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("logId")]
         public int LogId { get; set; }
         
-
+        /// <summary>
+        /// 
+        /// </summary>
         public Water()
         {
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="date"></param>
         public void GetWater(DateTime date)
         {
             RestRequest request;
@@ -42,6 +55,10 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
                 });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="param"></param>
         public void LogWater(Dictionary<string, string> param)
         {
             RestRequest request;
@@ -61,6 +78,10 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
                 });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ID"></param>
         public void DeleteWater(string ID)
         {
             RestRequest request;
@@ -73,12 +94,34 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void WaterLoggedHandler(object sender, LogWaterEventArgs e);
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void WaterSummaryGetHandler(object sender, WaterSummaryEventArgs e);
 
+        /// <summary>
+        /// 
+        /// </summary>
         public event WaterLoggedHandler WaterLogged;
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public event WaterSummaryGetHandler WaterSummaryDownloaded;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="summary"></param>
         public void NotifyDownloaded(FitBitWater summary)
         {
             if (WaterSummaryDownloaded != null)
@@ -87,6 +130,10 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="water"></param>
         public void NotifyComplete(WaterLog water)
         {
             if (WaterLogged != null)
@@ -96,20 +143,40 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class LogWaterEventArgs : EventArgs
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public WaterLog water;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="water"></param>
         public LogWaterEventArgs(WaterLog water)
         {
             this.water = water;
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class WaterSummaryEventArgs : EventArgs
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public FitBitWater WaterSummary;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="summary"></param>
         public WaterSummaryEventArgs(FitBitWater summary)
         {
             WaterSummary = summary;

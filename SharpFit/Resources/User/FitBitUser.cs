@@ -8,8 +8,14 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.User
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FitBitUser
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("user")]
         public Profile User { get; set; }
     }

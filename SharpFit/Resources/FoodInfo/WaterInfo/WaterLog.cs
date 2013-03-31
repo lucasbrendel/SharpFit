@@ -8,10 +8,14 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.FoodInfo.WaterInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class WaterLog
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("waterLog")]
         public Log Logs { get; set; }
     }

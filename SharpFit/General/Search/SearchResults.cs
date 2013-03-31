@@ -7,8 +7,14 @@ using Newtonsoft.Json;
 
 namespace SharpFit.General.Search
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FoodSearch
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("foods")]
         public IList<LoggedFood> foods;
     }

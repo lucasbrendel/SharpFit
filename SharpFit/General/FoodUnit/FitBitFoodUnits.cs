@@ -11,13 +11,20 @@ using SharpFit.OAuth;
 
 namespace SharpFit.General.FoodUnit
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class FitBitFoodUnits
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("units")]
         public IList<Unit> Units { get; set; }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public void GetFoodUnits()
         {
             RestRequest request;
@@ -32,10 +39,22 @@ namespace SharpFit.General.FoodUnit
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void FoodUnitsReceivedEventHander(object sender, FoodUnitsReceivedEventArgs e);
 
+        /// <summary>
+        /// 
+        /// </summary>
         public event FoodUnitsReceivedEventHander FoodUnitsReceived;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="units"></param>
         public void NotifyReceived(IList<Unit> units)
         {
             if (FoodUnitsReceived != null)
@@ -45,10 +64,20 @@ namespace SharpFit.General.FoodUnit
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class FoodUnitsReceivedEventArgs : EventArgs
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public IList<Unit> Units;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="units"></param>
         public FoodUnitsReceivedEventArgs(IList<Unit> units)
         {
             this.Units = units;

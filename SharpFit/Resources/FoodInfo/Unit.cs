@@ -8,16 +8,26 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.FoodInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class Unit
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("plural")]
         public string Plural { get; set; }
     }

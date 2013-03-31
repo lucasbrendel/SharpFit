@@ -8,10 +8,14 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.Social.FriendInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class FitBitFriends
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("friends")]
         public IList<Friend> Friends { get; set; }
     }

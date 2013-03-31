@@ -10,6 +10,9 @@ using SharpFit.OAuth;
 
 namespace SharpFit.Resources.Device
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Devices : INotifyPropertyChanged
     {
         private string _battery;

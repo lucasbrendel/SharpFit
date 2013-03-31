@@ -9,10 +9,19 @@ namespace SharpFit.OAuth
 {
     public class OAuthCredentials
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public const string APIAccessString = "https://api.fitbit.com/";
 
+        /// <summary>
+        /// 
+        /// </summary>
         public const string AuthorizeAccessString = "https://www.fitbit.com/oauth/authorize";
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string OAuthVerifier
         {
             get;
@@ -110,16 +119,33 @@ namespace SharpFit.OAuth
             return String.Empty;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="verifier"></param>
         public static void SetVerifier(string verifier)
         {
             OAuthVerifier = verifier;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string OAuthToken { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static string OAuthSecret { get; set; }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public const string APIVersion = "1";
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public const string APIAccessStringWithVersion = APIAccessString + APIVersion;
     }
 }

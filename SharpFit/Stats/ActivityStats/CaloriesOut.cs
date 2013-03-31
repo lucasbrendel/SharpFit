@@ -8,13 +8,20 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Stats.ActivityStats
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class CaloriesOut
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("date")]
         public string Date { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("value")]
         public int Value { get; set; }
     }

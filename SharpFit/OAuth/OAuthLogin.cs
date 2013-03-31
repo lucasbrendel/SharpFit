@@ -9,7 +9,18 @@ namespace SharpFit.OAuth
 {
     public class OAuthLogin
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void LoginCompleteHandler(object sender, LoginCompleteEventArgs e);
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void AccessTokenReceivedHandler(object sender, AccessTokenReceivedEventArgs e);
 
         /// <summary>

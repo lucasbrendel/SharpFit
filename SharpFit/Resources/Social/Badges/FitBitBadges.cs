@@ -8,10 +8,14 @@ using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.Social.BadgeInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class FitBitBadges
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("badges")]
         public IList<Badge> Badges { get; set; }
     }

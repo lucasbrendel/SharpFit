@@ -11,13 +11,20 @@ using SharpFit.OAuth;
 
 namespace SharpFit.Resources.Social.FriendInfo
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class Friend
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         [JsonProperty("user")]
         public User User { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void GetFriends()
         {
             RestRequest request;
@@ -32,10 +39,22 @@ namespace SharpFit.Resources.Social.FriendInfo
             });
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void GetFriendsEventHandler(object sender, GetFriendsEventArgs e);
 
+        /// <summary>
+        /// 
+        /// </summary>
         public event GetFriendsEventHandler GetFriendsComplete;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="friend"></param>
         public void NotifyGetComplete(FitBitFriends friend)
         {
             if (GetFriendsComplete != null)
@@ -45,10 +64,20 @@ namespace SharpFit.Resources.Social.FriendInfo
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class GetFriendsEventArgs : EventArgs
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public FitBitFriends FriendList;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Friends"></param>
         public GetFriendsEventArgs(FitBitFriends Friends)
         {
             FriendList = Friends;
