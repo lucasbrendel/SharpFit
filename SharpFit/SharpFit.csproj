@@ -88,7 +88,7 @@
     <Compile Include="Resources\BodyInfo\Measurements\Goals.cs" />
     <Compile Include="Resources\BodyInfo\Weight\FitBitWeight.cs" />
     <Compile Include="Resources\BodyInfo\Weight\Weight.cs" />
-    <Compile Include="Resources\Devices.cs" />
+    <Compile Include="Resources\DeviceInfo\Device.cs" />
     <Compile Include="Resources\FoodInfo\FitBitFood.cs" />
     <Compile Include="Resources\FoodInfo\Food.cs" />
     <Compile Include="Resources\FoodInfo\Goals.cs" />
@@ -134,6 +134,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\DeviceInfo\Alarms\" />
     <Folder Include="Stats\TimeSeries\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

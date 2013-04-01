@@ -76,7 +76,18 @@ namespace SharpFit.Resources.BloodPressureInfo
             }
             else
             {
-                throw new MissingParameterException();
+                if (!parameters.ContainsKey("systolic"))
+                {
+                    throw new MissingParameterException("systolic");
+                }
+                if (!parameters.ContainsKey("diastolic"))
+                {
+                    throw new MissingParameterException("diastolic");
+                }
+                if (!parameters.ContainsKey("date"))
+                {
+                    throw new MissingParameterException("date");
+                }
             }
         }
 
