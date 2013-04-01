@@ -64,7 +64,9 @@
   <ItemGroup>
     <Compile Include="APIAccess.cs" />
     <Compile Include="Events\LogWaterEventArgs.cs" />
+    <Compile Include="Events\ProfileEventArgs.cs" />
     <Compile Include="Events\WaterSummaryEventArgs.cs" />
+    <Compile Include="Exceptions\MissingParameterException.cs" />
     <Compile Include="General\FoodUnit\FitBitFoodUnits.cs" />
     <Compile Include="General\FoodUnit\Unit.cs" />
     <Compile Include="General\Search\SearchResults.cs" />
