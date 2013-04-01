@@ -1,12 +1,7 @@
-﻿using SharpFit.OAuth;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+﻿using Newtonsoft.Json;
 using RestSharp;
-using RestSharp.Authenticators;
 using System;
 using System.ComponentModel;
-using System.Collections.Generic;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace SharpFit.Resources.User
@@ -242,31 +237,5 @@ namespace SharpFit.Resources.User
         }
 
         #endregion
-
-        
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public class ProfileEventArgs : EventArgs
-    {
-        private FitBitUser _profile;
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="pro"></param>
-        public ProfileEventArgs(FitBitUser pro)
-        {
-            _profile = pro;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public FitBitUser UserProfile
-        {
-            get { return _profile; }
-        }
     }
 }

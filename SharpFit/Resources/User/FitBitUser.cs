@@ -1,14 +1,9 @@
-﻿// JSON C# Class Generator
-// http://at-my-window.blogspot.com/?page=json-class-generator
-
-using System;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Authenticators;
-using SharpFit.Resources.User;
+using SharpFit.Events;
 using SharpFit.OAuth;
+using System.Collections.Generic;
 
 namespace SharpFit.Resources.User
 {
