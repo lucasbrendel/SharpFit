@@ -94,7 +94,7 @@ namespace SharpFit.Resources.HeartRateInfo
                     {
                         Heart heartlog = new Heart();
                         heartlog = JsonConvert.DeserializeObject<Heart>(response.Content);
-                        NotifyDeleted(heartlog);
+                        NotifyLogged(heartlog);
                     });
             }
             else
@@ -117,24 +117,25 @@ namespace SharpFit.Resources.HeartRateInfo
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="heartlog"></param>
-        private void NotifyDeleted(Heart heartlog)
-        {
-            if (HeartRateLogged != null)
-            {
-                HeartRateLogged(this, new HeartRateLoggedEventArgs(heartlog));
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
         /// <param name="date"></param>
         /// <param name="tracker"></param>
         /// <param name="heartRate"></param>
         public void LogHeartRate(DateTime date, string tracker, int heartRate)
         {
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/user/-/heart.json", Method.POST);
+            request.AddParameter("tracker", tracker);
+            request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
+            request.AddParameter("heartRate", heartRate.ToString());
 
+            client.ExecuteAsync(request, response =>
+            {
+                Heart heartlog = new Heart();
+                heartlog = JsonConvert.DeserializeObject<Heart>(response.Content);
+                NotifyLogged(heartlog);
+            });
         }
 
         /// <summary>
@@ -146,7 +147,21 @@ namespace SharpFit.Resources.HeartRateInfo
         /// <param name="time"></param>
         public void LogHeartRate(DateTime date, string tracker, int heartRate, DateTime time)
         {
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/user/-/heart.json", Method.POST);
+            request.AddParameter("tracker", tracker);
+            request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
+            request.AddParameter("heartRate", heartRate.ToString());
+            request.AddParameter("time", String.Format("{0}:{1}", time.Hour, time.Minute));
 
+            client.ExecuteAsync(request, response =>
+            {
+                Heart heartlog = new Heart();
+                heartlog = JsonConvert.DeserializeObject<Heart>(response.Content);
+                NotifyLogged(heartlog);
+            });
         }
 
         /// <summary>
@@ -177,6 +192,18 @@ namespace SharpFit.Resources.HeartRateInfo
             if (HeartRateReceived != null)
             {
                 HeartRateReceived(this, new HeartRateEventArgs(heartRate));
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="heartlog"></param>
+        private void NotifyLogged(Heart heartlog)
+        {
+            if (HeartRateLogged != null)
+            {
+                HeartRateLogged(this, new HeartRateLoggedEventArgs(heartlog));
             }
         }
     }
