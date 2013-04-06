@@ -171,7 +171,22 @@ namespace SharpFit.Resources.HeartRateInfo
         /// <param name="date"></param>
         public void LogHeartRate(Heart heartInfo, DateTime date)
         {
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/user/-/heart.json", Method.POST);
+            request.AddParameter("tracker", heartInfo.Tracker);
+            request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
+            request.AddParameter("heartRate", heartInfo.HeartRate.ToString());
+            request.AddParameter("time", heartInfo.Time);
 
+
+            client.ExecuteAsync(request, response =>
+            {
+                Heart heartlog = new Heart();
+                heartlog = JsonConvert.DeserializeObject<Heart>(response.Content);
+                NotifyLogged(heartlog);
+            });
         }
 
         /// <summary>
