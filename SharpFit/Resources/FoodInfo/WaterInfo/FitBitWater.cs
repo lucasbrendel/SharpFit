@@ -8,6 +8,7 @@ using SharpFit.Events;
 using SharpFit.OAuth;
 using System;
 using System.Collections.Generic;
+using SharpFit.Exceptions;
 
 namespace SharpFit.Resources.FoodInfo.WaterInfo
 {
@@ -53,21 +54,35 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
         /// <param name="param"></param>
         public void LogWater(Dictionary<string, string> param)
         {
-            RestRequest request;
-            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
-            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
-            request = new RestRequest("/user/-/foods/log/water.json", Method.POST);
-            foreach (KeyValuePair<string, string> p in param)
+            if (param.ContainsKey("date") && param.ContainsKey("amount"))
             {
-                request.AddParameter(p.Key, p.Value);
-            }
+                RestRequest request;
+                var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+                client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+                request = new RestRequest("/user/-/foods/log/water.json", Method.POST);
+                foreach (KeyValuePair<string, string> p in param)
+                {
+                    request.AddParameter(p.Key, p.Value);
+                }
 
-            client.ExecuteAsync(request, response =>
+                client.ExecuteAsync(request, response =>
+                {
+                    WaterLog w = new WaterLog();
+                    w = JsonConvert.DeserializeObject<WaterLog>(response.Content);
+                    NotifyComplete(w);
+                });
+            }
+            else
             {
-                WaterLog w = new WaterLog();
-                w = JsonConvert.DeserializeObject<WaterLog>(response.Content);
-                NotifyComplete(w);
-            });
+                if (!param.ContainsKey("date"))
+                {
+                    throw new MissingParameterException("date");
+                }
+                if (!param.ContainsKey("amount"))
+                {
+                    throw new MissingParameterException("amount");
+                }
+            }
         }
 
         /// <summary>
@@ -82,7 +97,7 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
             request = new RestRequest("/user/-/foods/log/water/" + ID + ".json", Method.DELETE);
             client.ExecuteAsync(request, response =>
             {
-
+                string state = response.StatusCode.ToString();
             });
         }
 
