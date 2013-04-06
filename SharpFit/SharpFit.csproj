@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIAccess.cs" />
+    <Compile Include="Events\HeartRateEventArgs.cs" />
     <Compile Include="Events\LogWaterEventArgs.cs" />
     <Compile Include="Events\ProfileEventArgs.cs" />
     <Compile Include="Events\WaterSummaryEventArgs.cs" />
