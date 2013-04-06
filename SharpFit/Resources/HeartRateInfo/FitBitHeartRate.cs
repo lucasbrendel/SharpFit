@@ -9,6 +9,7 @@ using RestSharp;
 using RestSharp.Authenticators;
 using SharpFit.OAuth;
 using SharpFit.Events;
+using SharpFit.Exceptions;
 
 namespace SharpFit.Resources.HeartRateInfo
 {
@@ -17,8 +18,10 @@ namespace SharpFit.Resources.HeartRateInfo
     /// </summary>
     public class FitBitHeartRate
     {
+        public delegate void HeartRateLogHandler(object sender, HeartRateLoggedEventArgs e);
         public delegate void HeartRateGetHandler(object sender, HeartRateEventArgs e);
 
+        public event HeartRateLogHandler HeartRateLogged;
         public event HeartRateGetHandler HeartRateReceived;
 
         /// <summary>
@@ -76,7 +79,51 @@ namespace SharpFit.Resources.HeartRateInfo
         /// <param name="parameters"></param>
         public void LogHeartRate(Dictionary<string, string> parameters)
         {
+            if (parameters.ContainsKey("date") && parameters.ContainsKey("heartRate") && parameters.ContainsKey("tracker"))
+            {
+                RestRequest request;
+                var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+                client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+                request = new RestRequest("/user/-/heart.json", Method.POST);
+                foreach (KeyValuePair<string, string> p in parameters)
+                {
+                    request.AddParameter(p.Key, p.Value);
+                }
 
+                client.ExecuteAsync(request, response =>
+                    {
+                        Heart heartlog = new Heart();
+                        heartlog = JsonConvert.DeserializeObject<Heart>(response.Content);
+                        NotifyDeleted(heartlog);
+                    });
+            }
+            else
+            {
+                if (!parameters.ContainsKey("date"))
+                {
+                    throw new MissingParameterException("date");
+                }
+                else if (!parameters.ContainsKey("tracker"))
+                {
+                    throw new MissingParameterException("tracker");
+                }
+                else if (!parameters.ContainsKey("heartRate"))
+                {
+                    throw new MissingParameterException("heartRate");
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="heartlog"></param>
+        private void NotifyDeleted(Heart heartlog)
+        {
+            if (HeartRateLogged != null)
+            {
+                HeartRateLogged(this, new HeartRateLoggedEventArgs(heartlog));
+            }
         }
 
         /// <summary>

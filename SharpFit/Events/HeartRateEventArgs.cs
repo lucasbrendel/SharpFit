@@ -6,7 +6,7 @@ using SharpFit.Resources.HeartRateInfo;
 
 namespace SharpFit.Events
 {
-    public class HeartRateEventArgs :EventArgs
+    public class HeartRateEventArgs : EventArgs
     {
         /// <summary>
         /// 
@@ -20,6 +20,23 @@ namespace SharpFit.Events
         public HeartRateEventArgs(FitBitHeartRate heart)
         {
             this.heart = heart;
+        }
+    }
+
+    public class HeartRateLoggedEventArgs : EventArgs
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public Heart HeartLog;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="heartLog"></param>
+        public HeartRateLoggedEventArgs(Heart heartLog)
+        {
+            this.HeartLog = heartLog;
         }
     }
 }
