@@ -15,6 +15,10 @@ namespace SharpFit.Resources.BloodPressureInfo
     /// </summary>
     public class FitBitBloodPressure
     {
+        public delegate void BloodPressureGotHandler(object sender, BloodPressureGetEventArgs e);
+
+        public event BloodPressureGotHandler BloodPressureReceived;
+
         /// <summary>
         /// 
         /// </summary>
@@ -40,9 +44,10 @@ namespace SharpFit.Resources.BloodPressureInfo
         /// </summary>
         /// <param name="avg"></param>
         /// <param name="pressure"></param>
-        public FitBitBloodPressure(Average avg, Bp pressure)
+        public FitBitBloodPressure(Average avg, IList<Bp> pressure)
         {
-
+            this.Average = avg;
+            this.Bp = pressure;
         }
 
         /// <summary>
@@ -60,7 +65,7 @@ namespace SharpFit.Resources.BloodPressureInfo
                 {
                     FitBitBloodPressure bloodPressure = new FitBitBloodPressure();
                     bloodPressure = JsonConvert.DeserializeObject<FitBitBloodPressure>(response.Content);
-
+                    NotifyReceived(bloodPressure);
                 });
         }
 
@@ -121,6 +126,18 @@ namespace SharpFit.Resources.BloodPressureInfo
         public void DeleteBloodPressure(int logID)
         {
 
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="bloodPressure"></param>
+        private void NotifyReceived(FitBitBloodPressure bloodPressure)
+        {
+            if (BloodPressureReceived != null)
+            {
+                BloodPressureReceived(this, new BloodPressureGetEventArgs(bloodPressure));
+            }
         }
     }
 }
