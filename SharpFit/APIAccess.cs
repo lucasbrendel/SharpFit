@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace SharpFit
 {
@@ -26,6 +28,19 @@ namespace SharpFit
         {
             Success,
             Failure
+        }
+
+        public static bool IsValidDate(string date)
+        {
+            if (String.IsNullOrEmpty(date))
+            {
+                return false;
+            }
+
+            // Return true if date is a valid date
+            return Regex.IsMatch(date,
+                      @"^(\d{4}-\d{2}\-\d{2})",
+                      RegexOptions.Singleline);
         }
     }
 }

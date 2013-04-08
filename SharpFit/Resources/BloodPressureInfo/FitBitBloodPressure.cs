@@ -7,6 +7,7 @@ using RestSharp.Authenticators;
 using SharpFit.OAuth;
 using SharpFit.Events;
 using SharpFit.Exceptions;
+using SharpFit;
 
 namespace SharpFit.Resources.BloodPressureInfo
 {
@@ -16,8 +17,12 @@ namespace SharpFit.Resources.BloodPressureInfo
     public class FitBitBloodPressure
     {
         public delegate void BloodPressureGotHandler(object sender, BloodPressureGetEventArgs e);
+        public delegate void BloodPressureLoggedHandler(object sender, BloodPressureLoggedEventArgs e);
+        public delegate void BloodPressureDeletedHandler(object sender, BloodPressureDeletedEventArgs e);
 
         public event BloodPressureGotHandler BloodPressureReceived;
+        public event BloodPressureLoggedHandler BloodPressureLogged;
+        public event BloodPressureDeletedHandler BloodPressureDeleted;
 
         /// <summary>
         /// 
@@ -36,7 +41,8 @@ namespace SharpFit.Resources.BloodPressureInfo
         /// </summary>
         public FitBitBloodPressure()
         {
-
+            this.Average = null;
+            this.Bp = null;
         }
 
         /// <summary>
@@ -77,7 +83,28 @@ namespace SharpFit.Resources.BloodPressureInfo
         {
             if (parameters.ContainsKey("systolic") && parameters.ContainsKey("diastolic") && parameters.ContainsKey("date"))
             {
-
+                RestRequest request;
+                var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+                client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+                request = new RestRequest("/1/user/-/bp.json", Method.POST);
+                foreach (KeyValuePair<string, string> p in parameters)
+                {
+                    if (p.Key == "date" && APIAccess.IsValidDate(p.Value))
+                    {
+                        throw new FormatException("Request parameter 'date' was not in the correct format YYYY-MM-DD.");
+                    }
+                    else
+                    {
+                        request.AddParameter(p.Key, p.Value);
+                    }
+                }
+                request.AddHeader("Accept-Language", "en_US");
+                client.ExecuteAsync(request, response =>
+                {
+                    Bp bp = new Bp();
+                    bp = JsonConvert.DeserializeObject<Bp>(response.Content);
+                    NotifyLogged(bp);
+                });
             }
             else
             {
@@ -137,6 +164,18 @@ namespace SharpFit.Resources.BloodPressureInfo
             if (BloodPressureReceived != null)
             {
                 BloodPressureReceived(this, new BloodPressureGetEventArgs(bloodPressure));
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="bp"></param>
+        private void NotifyLogged(BloodPressureInfo.Bp bp)
+        {
+            if (BloodPressureLogged != null)
+            {
+                BloodPressureLogged(this, new BloodPressureLoggedEventArgs(bp));
             }
         }
     }
