@@ -65,6 +65,7 @@
     <Compile Include="General\FoodUnit\FoodUnitTest.cs" />
     <Compile Include="OAuth\OAuthCredentialsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="APIAccessTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpFit\SharpFit.csproj">

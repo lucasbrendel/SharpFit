@@ -10,7 +10,11 @@ namespace SharpFit.Test
         [TestMethod]
         public void IsValidDateTest()
         {
-            bool res = APIAccess.IsValidDate(@"8888-98-09");
+            Assert.IsTrue(APIAccess.IsValidDate(@"8888-98-09"));
+
+            Assert.IsFalse(APIAccess.IsValidDate(@"94-00-93"));
+
+            Assert.IsFalse(APIAccess.IsValidDate(@"4f04-54-32"));
         }
     }
 }

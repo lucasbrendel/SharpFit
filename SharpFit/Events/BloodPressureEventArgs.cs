@@ -30,6 +30,18 @@ namespace SharpFit.Events
 
     public class BloodPressureLoggedEventArgs
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public Bp BloodPressure;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="bp"></param>
+        public BloodPressureLoggedEventArgs(Bp bp)
+        {
+            this.BloodPressure = bp;
+        }
     }
 }
