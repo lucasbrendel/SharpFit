@@ -13,41 +13,42 @@ using SharpFit.Exceptions;
 
 namespace SharpFit.Resources.HeartRateInfo
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public class FitBitHeartRate
     {
         public delegate void HeartRateLogHandler(object sender, HeartRateLoggedEventArgs e);
         public delegate void HeartRateGetHandler(object sender, HeartRateEventArgs e);
+        public delegate void HeartRateDeleteHandler(object sender, HeartRateDeletedEventArgs e);
 
         public event HeartRateLogHandler HeartRateLogged;
         public event HeartRateGetHandler HeartRateReceived;
+        public event HeartRateDeleteHandler HeartRateDeleted;
 
         /// <summary>
-        /// 
+        /// List of Average heart rates
         /// </summary>
         [JsonProperty("average")]
         public IList<Average> Average { get; set; }
 
         /// <summary>
-        /// 
+        /// List of heart logs
         /// </summary>
         [JsonProperty("heart")]
         public IList<Heart> Heart { get; set; }
 
         /// <summary>
-        /// 
+        /// Constructor
         /// </summary>
         public FitBitHeartRate()
         {
+            this.Average = null;
+            this.Heart = null;
         }
 
         /// <summary>
-        /// 
+        /// Overloaded constructor
         /// </summary>
-        /// <param name="averages"></param>
-        /// <param name="heartLogs"></param>
+        /// <param name="averages">Averages for each tracker for the day</param>
+        /// <param name="heartLogs">All logs for a specific day</param>
         public FitBitHeartRate(IList<Average> averages, IList<Heart> heartLogs)
         {
             this.Average = averages;
@@ -74,9 +75,10 @@ namespace SharpFit.Resources.HeartRateInfo
         }
 
         /// <summary>
-        /// 
+        /// Creates a new logged heart rate
         /// </summary>
-        /// <param name="parameters"></param>
+        /// <param name="parameters">string of parameters</param>
+        /// <remarks>Parameters tracker, heartRate, and date are required, time is optional</remarks>
         public void LogHeartRate(Dictionary<string, string> parameters)
         {
             if (parameters.ContainsKey("date") && parameters.ContainsKey("heartRate") && parameters.ContainsKey("tracker"))
@@ -115,11 +117,11 @@ namespace SharpFit.Resources.HeartRateInfo
         }
 
         /// <summary>
-        /// 
+        /// Creates a new logged heart rate
         /// </summary>
-        /// <param name="date"></param>
-        /// <param name="tracker"></param>
-        /// <param name="heartRate"></param>
+        /// <param name="date">date of logged heart rate</param>
+        /// <param name="tracker">specific heart tracker to place the log under</param>
+        /// <param name="heartRate">Heart rate</param>
         public void LogHeartRate(DateTime date, string tracker, int heartRate)
         {
             RestRequest request;
@@ -139,12 +141,12 @@ namespace SharpFit.Resources.HeartRateInfo
         }
 
         /// <summary>
-        /// 
+        /// Creates a new logged heart rate
         /// </summary>
-        /// <param name="date"></param>
-        /// <param name="tracker"></param>
-        /// <param name="heartRate"></param>
-        /// <param name="time"></param>
+        /// <param name="date">date of logged heart rate</param>
+        /// <param name="tracker">specific heart tracker to place the log under</param>
+        /// <param name="heartRate">Heart rate</param>
+        /// <param name="time">Time of logging</param>
         public void LogHeartRate(DateTime date, string tracker, int heartRate, DateTime time)
         {
             RestRequest request;
@@ -165,11 +167,11 @@ namespace SharpFit.Resources.HeartRateInfo
         }
 
         /// <summary>
-        /// 
+        /// Creates a new logged heart rate
         /// </summary>
-        /// <param name="heartInfo"></param>
-        /// <param name="date"></param>
-        public void LogHeartRate(Heart heartInfo, DateTime date)
+        /// <param name="date">date of logged heart rate</param>
+        /// <param name="heartInfo">hreat rate information to log</param>
+        public void LogHeartRate(DateTime date, Heart heartInfo)
         {
             RestRequest request;
             var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
@@ -180,7 +182,6 @@ namespace SharpFit.Resources.HeartRateInfo
             request.AddParameter("heartRate", heartInfo.HeartRate.ToString());
             request.AddParameter("time", heartInfo.Time);
 
-
             client.ExecuteAsync(request, response =>
             {
                 Heart heartlog = new Heart();
@@ -190,19 +191,46 @@ namespace SharpFit.Resources.HeartRateInfo
         }
 
         /// <summary>
-        /// 
+        /// Deletes a logged heart rate
         /// </summary>
-        /// <param name="logId"></param>
+        /// <param name="logId">Unique ID of a logged heart rate to delete</param>
         public void DeleteHeartRate(int logId)
         {
-        
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/user/-/heart/" + logId.ToString() + ".json");
+            client.ExecuteAsync(request, response =>
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+                    {
+                        NotifyDeleted(true);
+                    }
+                    else
+                    {
+                        NotifyDeleted(false);
+                    }
+                    
+                });
         }
 
         /// <summary>
-        /// 
+        /// Event trigger when a heart rate log has been deleted
         /// </summary>
-        /// <param name="heartRate"></param>
-        public void NotifyDownloaded(FitBitHeartRate heartRate)
+        /// <param name="isDeleted">Notifier if the heart rate was deleted</param>
+        private void NotifyDeleted(bool isDeleted)
+        {
+            if (HeartRateDeleted != null)
+            {
+                HeartRateDeleted(this, new HeartRateDeletedEventArgs(isDeleted));
+            }
+        }
+
+        /// <summary>
+        /// Event trigger when all heart logs for a specific day have been downloaded
+        /// </summary>
+        /// <param name="heartRate">Heart rate listings for a specific day</param>
+        private void NotifyDownloaded(FitBitHeartRate heartRate)
         {
             if (HeartRateReceived != null)
             {
@@ -211,9 +239,9 @@ namespace SharpFit.Resources.HeartRateInfo
         }
 
         /// <summary>
-        /// 
+        /// Event trigger when a new heart rate has been logged
         /// </summary>
-        /// <param name="heartlog"></param>
+        /// <param name="heartlog">Newly created heart log</param>
         private void NotifyLogged(Heart heartlog)
         {
             if (HeartRateLogged != null)

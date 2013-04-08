@@ -39,4 +39,21 @@ namespace SharpFit.Events
             this.HeartLog = heartLog;
         }
     }
+
+    public class HeartRateDeletedEventArgs : EventArgs
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool IsDeleted;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="deleted"></param>
+        public HeartRateDeletedEventArgs(bool deleted)
+        {
+            IsDeleted = deleted;
+        }
+    }
 }
