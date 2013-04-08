@@ -1,7 +1,4 @@
-﻿// JSON C# Class Generator
-// http://at-my-window.blogspot.com/?page=json-class-generator
-
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Authenticators;
 using SharpFit.Events;
@@ -97,7 +94,14 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
             request = new RestRequest("/user/-/foods/log/water/" + ID + ".json", Method.DELETE);
             client.ExecuteAsync(request, response =>
             {
-                string state = response.StatusCode.ToString();
+                if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+                {
+                    NotifyDeleted(true);
+                }
+                else
+                {
+                    NotifyDeleted(false);
+                }
             });
         }
 
@@ -106,14 +110,21 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public delegate void WaterLoggedHandler(object sender, LogWaterEventArgs e);
+        public delegate void WaterLoggedHandler(object sender, WaterLoggedEventArgs e);
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public delegate void WaterSummaryGetHandler(object sender, WaterSummaryEventArgs e);
+        public delegate void WaterSummaryGetHandler(object sender, WaterGetEventArgs e);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public delegate void WaterDeletedHandler(object sender, WaterDeletedEventArgs e);
 
         /// <summary>
         /// 
@@ -128,12 +139,17 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
         /// <summary>
         /// 
         /// </summary>
+        public event WaterDeletedHandler WaterLogDeleted;
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="summary"></param>
-        public void NotifyDownloaded(FitBitWater summary)
+        private void NotifyDownloaded(FitBitWater summary)
         {
             if (WaterSummaryDownloaded != null)
             {
-                WaterSummaryDownloaded(this, new WaterSummaryEventArgs(summary));
+                WaterSummaryDownloaded(this, new WaterGetEventArgs(summary));
             }
         }
 
@@ -141,11 +157,23 @@ namespace SharpFit.Resources.FoodInfo.WaterInfo
         /// 
         /// </summary>
         /// <param name="water"></param>
-        public void NotifyComplete(WaterLog water)
+        private void NotifyComplete(WaterLog water)
         {
             if (WaterLogged != null)
             {
-                WaterLogged(this, new LogWaterEventArgs(water));
+                WaterLogged(this, new WaterLoggedEventArgs(water));
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="isDeleted"></param>
+        private void NotifyDeleted(bool isDeleted)
+        {
+            if (WaterLogDeleted != null)
+            {
+                WaterLogDeleted(this, new WaterDeletedEventArgs(isDeleted));
             }
         }
     }
