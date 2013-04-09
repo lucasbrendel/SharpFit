@@ -131,7 +131,20 @@ namespace SharpFit.Resources.BloodPressureInfo
         /// <param name="date"></param>
         public void LogBloodPressure(int Systolic, int Diastolic, DateTime date)
         {
-
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/1/user/-/bp.json", Method.POST);
+            request.AddParameter("systolic", Systolic);
+            request.AddParameter("systolic", Diastolic);
+            request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
+            request.AddHeader("Accept-Language", "en_US");
+            client.ExecuteAsync(request, response =>
+            {
+                Bp bp = new Bp();
+                bp = JsonConvert.DeserializeObject<Bp>(response.Content);
+                NotifyLogged(bp);
+            });
         }
 
         /// <summary>
@@ -143,6 +156,21 @@ namespace SharpFit.Resources.BloodPressureInfo
         /// <param name="time">OPTIONAL parameter for the time of measurement</param>
         public void LogBloodPressure(int systolic, int diastolic, DateTime date, DateTime time)
         {
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/1/user/-/bp.json", Method.POST);
+            request.AddParameter("systolic", systolic);
+            request.AddParameter("systolic", diastolic);
+            request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
+            request.AddParameter("time", String.Format("{0}:{1}", time.Hour, time.Minute));
+            request.AddHeader("Accept-Language", "en_US");
+            client.ExecuteAsync(request, response =>
+            {
+                Bp bp = new Bp();
+                bp = JsonConvert.DeserializeObject<Bp>(response.Content);
+                NotifyLogged(bp);
+            });
 
         }
 
