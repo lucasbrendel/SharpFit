@@ -6,7 +6,7 @@ using SharpFit.Resources.BloodPressureInfo;
 
 namespace SharpFit.Events
 {
-    public class BloodPressureGetEventArgs
+    public class BloodPressureGetEventArgs : EventArgs
     {
         /// <summary>
         /// 
@@ -23,12 +23,24 @@ namespace SharpFit.Events
         }
     }
 
-    public class BloodPressureDeletedEventArgs
+    public class BloodPressureDeletedEventArgs : EventArgs
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool IsDeleted;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="isDeleted"></param>
+        public BloodPressureDeletedEventArgs(bool isDeleted)
+        {
+            this.IsDeleted = isDeleted;
+        }
     }
 
-    public class BloodPressureLoggedEventArgs
+    public class BloodPressureLoggedEventArgs : EventArgs
     {
         /// <summary>
         /// 

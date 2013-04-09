@@ -180,7 +180,34 @@ namespace SharpFit.Resources.BloodPressureInfo
         /// <param name="logID"></param>
         public void DeleteBloodPressure(int logID)
         {
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/1/user/-/bp/" + logID.ToString() + ".json", Method.DELETE);
 
+            client.ExecuteAsync(request, response =>
+                {
+                    if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+                    {
+                        NotifyDeleted(true);
+                    }
+                    else
+                    {
+                        NotifyDeleted(false);
+                    }
+                });
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="state"></param>
+        private void NotifyDeleted(bool state)
+        {
+            if (BloodPressureDeleted != null)
+            {
+                BloodPressureDeleted(this, new BloodPressureDeletedEventArgs(state));
+            }
         }
 
         /// <summary>
