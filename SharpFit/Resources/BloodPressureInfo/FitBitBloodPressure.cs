@@ -65,7 +65,7 @@ namespace SharpFit.Resources.BloodPressureInfo
             RestRequest request;
             var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
             client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
-            request = new RestRequest(String.Format("/1/user/-/bp/date/{0}-{1}-{2}.json", date.Year, date.Month, date.Day), Method.GET);
+            request = new RestRequest(String.Format("/user/-/bp/date/{0}-{1}-{2}.json", date.Year, date.Month, date.Day), Method.GET);
             request.AddHeader("Accept-Language", "en_US");
             client.ExecuteAsync(request, response =>
                 {
@@ -86,7 +86,7 @@ namespace SharpFit.Resources.BloodPressureInfo
                 RestRequest request;
                 var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
                 client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
-                request = new RestRequest("/1/user/-/bp.json", Method.POST);
+                request = new RestRequest("/user/-/bp.json", Method.POST);
                 foreach (KeyValuePair<string, string> p in parameters)
                 {
                     if (p.Key == "date" && APIAccess.IsValidDate(p.Value))
@@ -134,7 +134,7 @@ namespace SharpFit.Resources.BloodPressureInfo
             RestRequest request;
             var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
             client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
-            request = new RestRequest("/1/user/-/bp.json", Method.POST);
+            request = new RestRequest("/user/-/bp.json", Method.POST);
             request.AddParameter("systolic", Systolic);
             request.AddParameter("systolic", Diastolic);
             request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
@@ -159,7 +159,7 @@ namespace SharpFit.Resources.BloodPressureInfo
             RestRequest request;
             var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
             client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
-            request = new RestRequest("/1/user/-/bp.json", Method.POST);
+            request = new RestRequest("/user/-/bp.json", Method.POST);
             request.AddParameter("systolic", systolic);
             request.AddParameter("systolic", diastolic);
             request.AddParameter("date", String.Format("{0}-{1}-{2}", date.Year, date.Month, date.Day));
@@ -183,7 +183,7 @@ namespace SharpFit.Resources.BloodPressureInfo
             RestRequest request;
             var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
             client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
-            request = new RestRequest("/1/user/-/bp/" + logID.ToString() + ".json", Method.DELETE);
+            request = new RestRequest("/user/-/bp/" + logID.ToString() + ".json", Method.DELETE);
 
             client.ExecuteAsync(request, response =>
                 {
