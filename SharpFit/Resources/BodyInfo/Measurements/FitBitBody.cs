@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 using SharpFit.OAuth;
 using RestSharp;
 using RestSharp.Authenticators;
+using SharpFit.Events;
 
 namespace SharpFit.Resources.BodyInfo.Measurements
 {
@@ -37,6 +38,17 @@ namespace SharpFit.Resources.BodyInfo.Measurements
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="body"></param>
+        /// <param name="goals"></param>
+        public FitBitBody(Body body, Goals goals)
+        {
+            this.Body = body;
+            this.Goals = goals;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="date"></param>
         public void GetBodyMeasurements(DateTime date)
         {
@@ -48,7 +60,7 @@ namespace SharpFit.Resources.BodyInfo.Measurements
             {
                 FitBitBody b = new FitBitBody();
                 b.Body = JsonConvert.DeserializeObject<Body>(response.Content);
-                NotifyGetComplete(b);
+                NotifyReceived(b);
             });
         }
 
@@ -68,32 +80,12 @@ namespace SharpFit.Resources.BodyInfo.Measurements
         /// 
         /// </summary>
         /// <param name="measurements"></param>
-        public void NotifyGetComplete(FitBitBody measurements)
+        public void NotifyReceived(FitBitBody measurements)
         {
             if (MeasurementsReceived != null)
             {
                 MeasurementsReceived(this, new BodyMeasurementsEventArgs(measurements));
             }
-        }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public class BodyMeasurementsEventArgs : EventArgs
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public FitBitBody Measurements;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="measurements"></param>
-        public BodyMeasurementsEventArgs(FitBitBody measurements)
-        {
-            this.Measurements = measurements;
         }
     }
 }
