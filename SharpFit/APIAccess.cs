@@ -43,4 +43,16 @@ namespace SharpFit
                       RegexOptions.Singleline);
         }
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum TimePeriod
+    {
+        OneDay,
+        SevenDays,
+        ThirtyDays,
+        OneWeek,
+        OneMonth
+    };
 }

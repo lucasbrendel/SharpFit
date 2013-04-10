@@ -10,6 +10,7 @@ using RestSharp;
 using RestSharp.Authenticators;
 using System.ComponentModel;
 using SharpFit.OAuth;
+using SharpFit;
 
 namespace SharpFit.Resources.BodyInfo.Weight
 {
@@ -21,18 +22,6 @@ namespace SharpFit.Resources.BodyInfo.Weight
         public delegate void BodyWeightGetEventHandler(object sender, BodyWeightGetEventArgs e);
 
         public event BodyWeightGetEventHandler BodyWeightReceived;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public enum TimePeriod
-        {
-            OneDay,
-            SevenDays,
-            ThirtyDays,
-            OneWeek,
-            OneMonth
-        };
 
         /// <summary>
         /// 
