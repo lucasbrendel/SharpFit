@@ -65,6 +65,7 @@
     <Compile Include="APIAccess.cs" />
     <Compile Include="Events\BloodPressureEventArgs.cs" />
     <Compile Include="Events\BodyFatEventArgs.cs" />
+    <Compile Include="Events\BodyFatGoalEventArgs.cs" />
     <Compile Include="Events\BodyMeasurementEventArgs.cs" />
     <Compile Include="Events\BodyWeightEventArgs.cs" />
     <Compile Include="Events\BodyWeightGoalEventArgs.cs" />
@@ -90,6 +91,8 @@
     <Compile Include="Resources\BloodPressureInfo\FitBitBloodPressure.cs" />
     <Compile Include="Resources\BodyInfo\Fat\Fat.cs" />
     <Compile Include="Resources\BodyInfo\Fat\FitBitFat.cs" />
+    <Compile Include="Resources\BodyInfo\Fat\FitbitFatGoal.cs" />
+    <Compile Include="Resources\BodyInfo\Fat\FatGoal.cs" />
     <Compile Include="Resources\BodyInfo\Measurements\Body.cs" />
     <Compile Include="Resources\BodyInfo\Measurements\FitBitBody.cs" />
     <Compile Include="Resources\BodyInfo\Measurements\Goals.cs" />
