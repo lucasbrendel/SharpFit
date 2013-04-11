@@ -67,6 +67,7 @@
     <Compile Include="Events\BodyFatEventArgs.cs" />
     <Compile Include="Events\BodyMeasurementEventArgs.cs" />
     <Compile Include="Events\BodyWeightEventArgs.cs" />
+    <Compile Include="Events\BodyWeightGoalEventArgs.cs" />
     <Compile Include="Events\GlucoseEventArgs.cs" />
     <Compile Include="Events\HeartRateEventArgs.cs" />
     <Compile Include="Events\ProfileEventArgs.cs" />
@@ -93,7 +94,9 @@
     <Compile Include="Resources\BodyInfo\Measurements\FitBitBody.cs" />
     <Compile Include="Resources\BodyInfo\Measurements\Goals.cs" />
     <Compile Include="Resources\BodyInfo\Weight\FitBitWeight.cs" />
+    <Compile Include="Resources\BodyInfo\Weight\WeightGoal.cs" />
     <Compile Include="Resources\BodyInfo\Weight\Weight.cs" />
+    <Compile Include="Resources\BodyInfo\Weight\FitbitWeightGoal.cs" />
     <Compile Include="Resources\DeviceInfo\Device.cs" />
     <Compile Include="Resources\FoodInfo\FitBitFood.cs" />
     <Compile Include="Resources\FoodInfo\Food.cs" />
