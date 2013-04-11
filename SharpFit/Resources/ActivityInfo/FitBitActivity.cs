@@ -8,6 +8,7 @@ using Newtonsoft.Json.Linq;
 using RestSharp;
 using RestSharp.Authenticators;
 using SharpFit.OAuth;
+using SharpFit.Events;
 
 namespace SharpFit.Resources.ActivityInfo
 {
@@ -15,7 +16,7 @@ namespace SharpFit.Resources.ActivityInfo
     public class FitBitActivity
     {
         /// <summary>
-        /// List of Acetivity
+        /// List of Activity
         /// </summary>
         [JsonProperty("activities")]
         public IList<Activity> Activities { get; set; }
@@ -73,26 +74,6 @@ namespace SharpFit.Resources.ActivityInfo
             {
                 ActivitiesCompleted(this, new ActivitiesReceivedEventArgs(activity));
             }
-        }
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public class ActivitiesReceivedEventArgs : EventArgs
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        public FitBitActivity Activities;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="activities"></param>
-        public ActivitiesReceivedEventArgs(FitBitActivity activities)
-        {
-            Activities = activities;
         }
     }
 }
