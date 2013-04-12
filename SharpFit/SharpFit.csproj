@@ -84,10 +84,11 @@
     <Compile Include="OAuth\OAuthLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\ActivityInfo\Activity.cs" />
+    <Compile Include="Resources\ActivityInfo\DailyGoals.cs" />
     <Compile Include="Resources\ActivityInfo\Distance.cs" />
     <Compile Include="Resources\ActivityInfo\FitBitActivity.cs" />
-    <Compile Include="Resources\ActivityInfo\Goals.cs" />
     <Compile Include="Resources\ActivityInfo\Summary.cs" />
+    <Compile Include="Resources\ActivityInfo\WeeklyGoals.cs" />
     <Compile Include="Resources\BloodPressureInfo\Average.cs" />
     <Compile Include="Resources\BloodPressureInfo\Bp.cs" />
     <Compile Include="Resources\BloodPressureInfo\FitBitBloodPressure.cs" />

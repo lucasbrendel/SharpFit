@@ -1,24 +1,13 @@
-﻿// JSON C# Class Generator
-// http://at-my-window.blogspot.com/?page=json-class-generator
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace SharpFit.Resources.ActivityInfo
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    public class Goals
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        [JsonProperty("activeScore")]
-        public int ActiveScore { get; set; }
 
+    public class DailyGoals
+    {
         /// <summary>
         /// 
         /// </summary>
@@ -43,4 +32,5 @@ namespace SharpFit.Resources.ActivityInfo
         [JsonProperty("steps")]
         public int Steps { get; set; }
     }
+
 }

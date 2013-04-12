@@ -25,4 +25,21 @@ namespace SharpFit.Events
             Activities = activities;
         }
     }
+
+    public class ActivitiesDailyGoalsReceivedEventArgs : EventArgs
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public DailyGoals Goals;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="goals"></param>
+        public ActivitiesDailyGoalsReceivedEventArgs(DailyGoals goals)
+        {
+            this.Goals = goals;
+        }
+    }
 }
