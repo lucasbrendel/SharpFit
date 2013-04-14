@@ -22,4 +22,21 @@ namespace SharpFit.Events
             this.Foods = foods;
         }
     }
+
+    public class FoodGoalsGetEventArgs : EventArgs
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public Goals Goal;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="goals"></param>
+        public FoodGoalsGetEventArgs(Goals goals)
+        {
+            this.Goal = goals;
+        }
+    }
 }

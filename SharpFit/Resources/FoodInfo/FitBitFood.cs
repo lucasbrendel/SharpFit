@@ -16,7 +16,11 @@ namespace SharpFit.Resources.FoodInfo
     {
         public delegate void FoodReceivedEventHandler(object sender, FoodGetEventArgs e);
 
+        public delegate void FoodGoalReceivedEventHandler(object sender, FoodGoalsGetEventArgs e);
+
         public event FoodReceivedEventHandler FoodReceived;
+
+        public event FoodGoalReceivedEventHandler FoodGoalReceived;
 
         /// <summary>
         /// 
@@ -53,6 +57,36 @@ namespace SharpFit.Resources.FoodInfo
                 food = JsonConvert.DeserializeObject<FitBitFood>(response.Content);
                 NotifyReceived(food);
             });
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void GetFoodGoals()
+        {
+            RestRequest request;
+            var client = new RestClient(OAuthCredentials.APIAccessStringWithVersion);
+            client.Authenticator = OAuth1Authenticator.ForProtectedResource(OAuthCredentials.ConsumerKey, OAuthCredentials.ConsumerSecret, OAuthCredentials.AccessToken, OAuthCredentials.AccessTokenSecret);
+            request = new RestRequest("/user/-/foods/log/goal.json", Method.GET);
+            request.AddHeader("Accept-Language", "en_US");
+            client.ExecuteAsync(request, response =>
+            {
+                Goals food = new Goals();
+                food = JsonConvert.DeserializeObject<Goals>(response.Content);
+                NotifyGoalReceived(food);
+            });
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="food"></param>
+        private void NotifyGoalReceived(FoodInfo.Goals food)
+        {
+            if (FoodGoalReceived != null)
+            {
+                FoodGoalReceived(this, new FoodGoalsGetEventArgs(food));
+            }
         }
 
         /// <summary>
