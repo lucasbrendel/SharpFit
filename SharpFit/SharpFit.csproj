@@ -71,6 +71,7 @@
     <Compile Include="Events\BodyWeightEventArgs.cs" />
     <Compile Include="Events\BodyWeightGoalEventArgs.cs" />
     <Compile Include="Events\DeviceAlarmsEventArgs.cs" />
+    <Compile Include="Events\FoodEventArgs.cs" />
     <Compile Include="Events\GlucoseEventArgs.cs" />
     <Compile Include="Events\HeartRateEventArgs.cs" />
     <Compile Include="Events\ProfileEventArgs.cs" />
