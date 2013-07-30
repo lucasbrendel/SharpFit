@@ -3,6 +3,8 @@ FitbitSDK
 
 A C# WP7.X and later SDK for accessing the Fitbit API.
 
+[![Stories in Ready](https://badge.waffle.io/lucasbrendel/Sharpfit.png)](http://waffle.io/lucasbrendel/Sharpfit)
+
 # The risk
 Being as this project is very young, there is a great possibility for breaking changes. I will try to minimize 
 that as much as possible. I will do the best i can to ensure that all changes take place behind the user's line of sight.
