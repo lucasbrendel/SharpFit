@@ -11,3 +11,7 @@ that as much as possible. I will do the best i can to ensure that all changes ta
 I will try to make that that any changes that would cause problems up front are alerted to developers.
 
 Refer to the Changelog in the wiki.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lucasbrendel/sharpfit/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
